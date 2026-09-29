@@ -1,0 +1,3106 @@
+     <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#165DFF">
+    <meta name="description" content="کتابچه جامع آموزشی و مقررات مدرسه دوره اول متوسطه - پایه‌های هفتم، هشتم و نهم. شامل قوانین، جزوه‌ها، سوالات امتحانی و پاسخ‌های تشریحی.">
+    <meta name="keywords" content="کتابچه مدرسه, پایه هفتم, پایه هشتم, پایه نهم, قوانین مدرسه, سوالات امتحانی, جزوه آموزشی, دوره اول متوسطه">
+    <meta name="author" content="مدرسه نمونه">
+    <meta property="og:title" content="کتابچه جامع آموزشی و مقررات مدرسه">
+    <meta property="og:description" content="منبع کامل آموزشی برای دانش‌آموزان دوره اول متوسطه">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <title>📚 کتابچه جامع آموزشی و مقررات مدرسه | دوره اول متوسطه</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #165DFF;
+            --primary-dark: #0F3890;
+            --secondary: #FF7D00;
+            --gold: #D4AF37;
+            --success: #10B981;
+            --danger: #EF4444;
+            --warning: #F59E0B;
+            --dark: #1E293B;
+            --gray: #64748B;
+            --light: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --body-bg: linear-gradient(135deg, #F0F4FF 0%, #FFF8F0 100%);
+            --border: #E2E8F0;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 12px 40px rgba(22,93,255,0.18);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        [data-theme="dark"] {
+            --primary: #5B8DEF;
+            --primary-dark: #3B6BCF;
+            --dark: #F1F5F9;
+            --gray: #94A3B8;
+            --light: #0F172A;
+            --card-bg: #1E293B;
+            --body-bg: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            --border: #334155;
+            --shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+            background: var(--body-bg);
+            background-attachment: fixed;
+            color: var(--dark);
+            line-height: 2.3;
+            min-height: 100vh;
+            transition: var(--transition);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: pulse 8s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: 14px;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.9;
+        }
+        
+        .search-box {
+            margin-top: 28px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 16px 55px 16px 22px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-family: inherit;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            outline: none;
+            transition: var(--transition);
+        }
+        
+        .search-box input:focus {
+            box-shadow: 0 6px 25px rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .search-box i {
+            position: absolute;
+            right: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .search-results-count {
+            position: absolute;
+            left: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: none;
+        }
+        
+        .search-results-count.active { display: block; }
+        
+        /* Navigation */
+        nav {
+            background: var(--card-bg);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: var(--transition);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px;
+        }
+        
+        .nav-btn {
+            background: transparent;
+            border: none;
+            padding: 15px 22px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: var(--transition);
+            color: var(--dark);
+        }
+        
+        .nav-btn:hover {
+            color: var(--primary);
+            background: rgba(22,93,255,0.06);
+        }
+        
+        .nav-btn.active {
+            border-bottom-color: var(--primary);
+            color: var(--primary);
+            background: rgba(22,93,255,0.08);
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 100px;
+            left: 20px;
+            width: 48px;
+            height: 48px;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+        
+        .theme-toggle:hover {
+            transform: rotate(180deg) scale(1.1);
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 35px 20px 70px;
+            min-height: 60vh;
+        }
+        
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .section.active { display: block; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Subject Buttons */
+        .subject-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 28px 0;
+        }
+        
+        .subject-btn {
+            padding: 13px 26px;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: var(--transition);
+            background: #F1F5FF;
+            color: var(--primary);
+        }
+        
+        [data-theme="dark"] .subject-btn {
+            background: #1E293B;
+            color: var(--primary);
+            border-color: var(--border);
+        }
+        
+        .subject-btn:hover, .subject-btn.active {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(22,93,255,0.35);
+        }
+        
+        .subject-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        .subject-content.active { display: block; }
+        
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 38px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .card h2 {
+            color: var(--primary);
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 3px solid var(--border);
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        
+        .card h3 {
+            color: var(--secondary);
+            margin: 32px 0 18px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            padding-right: 15px;
+            border-right: 4px solid var(--secondary);
+        }
+        
+        .card h4 {
+            color: var(--dark);
+            margin: 24px 0 14px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .card p, .card li {
+            margin-bottom: 14px;
+            text-align: justify;
+            line-height: 2.4;
+            color: var(--dark);
+        }
+        
+        .card ul, .card ol {
+            padding-right: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .card li { margin-bottom: 10px; }
+        
+        .card strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .card em {
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 28px 0;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+        }
+        
+        th, td {
+            padding: 16px 20px;
+            text-align: right;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        th {
+            background: linear-gradient(135deg, var(--primary), #2970FF);
+            color: white;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        
+        tr:nth-child(even) td { background: rgba(22,93,255,0.03); }
+        
+        tr:hover td { background: rgba(22,93,255,0.06); }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #FFF7E8, #FFFAF0);
+            border-right: 5px solid var(--gold);
+            padding: 28px;
+            border-radius: var(--radius-sm);
+            margin: 28px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        [data-theme="dark"] .highlight-box {
+            background: linear-gradient(135deg, #2D2416, #1F1A10);
+            border-right-color: var(--gold);
+        }
+        
+        .highlight-box p { color: var(--dark); }
+        
+        .info-box {
+            background: linear-gradient(135deg, #EEF5FF, #F0F7FF);
+            border-right: 5px solid var(--primary);
+            padding: 28px;
+            border-radius: var(--radius-sm);
+            margin: 28px 0;
+        }
+        
+        [data-theme="dark"] .info-box {
+            background: linear-gradient(135deg, #1E293B, #0F172A);
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #FEF3C7, #FEF9E7);
+            border-right: 5px solid var(--warning);
+            padding: 28px;
+            border-radius: var(--radius-sm);
+            margin: 28px 0;
+        }
+        
+        [data-theme="dark"] .warning-box {
+            background: linear-gradient(135deg, #2D2516, #1F1A10);
+        }
+        
+        /* Question Block */
+        .question-block {
+            background: var(--card-bg);
+            border-right: 5px solid var(--primary);
+            border-left: 5px solid var(--primary);
+            padding: 28px;
+            border-radius: var(--radius-sm);
+            margin: 28px 0;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .question-block:hover {
+            transform: translateX(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .question {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 18px;
+            font-size: 1.1rem;
+            line-height: 2;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: var(--primary);
+            color: white;
+            min-width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            color: var(--dark);
+            padding-right: 22px;
+            border-right: 3px solid var(--border);
+            line-height: 2.5;
+            margin-right: 48px;
+        }
+        
+        .answer-toggle {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            margin-top: 12px;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .answer-toggle:hover {
+            background: var(--primary-dark);
+            transform: translateX(-4px);
+        }
+        
+        .answer-content {
+            display: none;
+            margin-top: 15px;
+            animation: slideDown 0.4s ease;
+        }
+        
+        .answer-content.visible { display: block; }
+        
+        @keyframes slideDown {
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 2000px; }
+        }
+        
+        /* TOC */
+        .toc {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+            margin: 35px 0;
+        }
+        
+        .toc-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: var(--transition);
+            border-top: 5px solid var(--primary);
+            text-align: center;
+        }
+        
+        .toc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .toc-card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .toc-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary), #2970FF);
+            color: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-card i {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            display: block;
+            margin: 8px 0;
+        }
+        
+        .stat-label {
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        
+        [data-theme="dark"] footer {
+            background: #0F172A;
+            border-top: 2px solid var(--border);
+        }
+        
+        footer h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        
+        footer p { margin-bottom: 10px; opacity: 0.85; }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            opacity: 0.8;
+        }
+        
+        .footer-links a:hover { opacity: 1; color: var(--primary); }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 55px;
+            height: 55px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(22,93,255,0.4);
+            z-index: 99;
+            border: none;
+            font-size: 1.3rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Print Styles */
+        @media print {
+            header, nav, .back-to-top, .theme-toggle, .search-box, .subject-buttons { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+            .section { display: block !important; }
+            .subject-content { display: block !important; }
+            body { background: white; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card { padding: 22px; }
+            .card h2 { font-size: 1.3rem; }
+            .card h3 { font-size: 1.1rem; }
+            .nav-btn { padding: 11px 14px; font-size: 0.85rem; }
+            .question { flex-direction: column; gap: 8px; }
+            .answer { margin-right: 0; }
+            .theme-toggle { top: 85px; left: 10px; width: 42px; height: 42px; }
+            header { padding: 35px 15px; }
+            main { padding: 20px 15px 50px; }
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: var(--gray);
+        }
+        
+        .spinner {
+            border: 4px solid var(--border);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Search Highlight */
+        mark {
+            background: linear-gradient(135deg, #FEF3C7, #FCD34D);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--dark);
+        }
+        
+        /* Accessibility */
+        *:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+        
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--success);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            z-index: 9999;
+            opacity: 0;
+            transition: all 0.4s ease;
+            font-weight: 600;
+        }
+        
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+        
+        /* Offline Indicator */
+        .offline-banner {
+            background: var(--warning);
+            color: var(--dark);
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+        
+        .offline-banner.show { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="offline-banner" id="offlineBanner">
+    <i class="fas fa-wifi-slash"></i> شما در حالت آفلاین هستید - محتوا از حافظه محلی بارگذاری می‌شود
+</div>
+
+<header>
+    <div class="header-content">
+        <h1>📚 کتابچه جامع آموزشی و مقررات مدرسه</h1>
+        <p>تمام قوانین، جزوه‌ها، سوالات امتحانی و مطالب کامل پایه‌های هفتم، هشتم و نهم — دوره اول متوسطه</p>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="جستجو در تمام مطالب... (مثلاً: فتوسنتز، معادله، تاریخ)">
+            <span class="search-results-count" id="searchCount">0</span>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-container">
+        <button class="nav-btn active" data-target="home">🏠 خانه</button>
+        <button class="nav-btn" data-target="rules">📖 قوانین مدرسه</button>
+        <button class="nav-btn" data-target="grade7">🟡 پایه هفتم</button>
+        <button class="nav-btn" data-target="grade8">🟠 پایه هشتم</button>
+        <button class="nav-btn" data-target="grade9">🔴 پایه نهم</button>
+        <button class="nav-btn" data-target="resources">📁 منابع تکمیلی</button>
+        <button class="nav-btn" data-target="about">ℹ️ درباره</button>
+    </div>
+</nav>
+
+<button class="theme-toggle" id="themeToggle" aria-label="تغییر تم">
+    <i class="fas fa-moon"></i>
+</button>
+
+<main id="mainContent">
+
+<!-- ============== صفحه اصلی ============== -->
+<section id="home" class="section active">
+    <div class="card">
+        <h2>👋 خوش آمدید به مرجع کامل آموزشی دوره اول متوسطه</h2>
+        <p>این وب‌سایت با هدف دسترسی آسان، رایگان و همگانی به تمام منابع آموزشی، مقررات، سوالات امتحانی و جزوه‌های درسی پایه‌های هفتم، هشتم و نهم — دوره اول متوسطه — طراحی و تهیه شده است. در اینجا هیچ‌گونه محدودیت زمانی، مکانی و هزینه‌ای وجود ندارد و همه دانش‌آموزان سراسر کشور می‌توانند به صورت رایگان و بدون نیاز به ثبت‌نام یا پرداخت وجه، از هزاران سطر مطلب آموزشی بهره‌مند شوند.</p>
+        <p>محتوای این سایت به گونه‌ای تنظیم شده که پس از یک بار بارگذاری، حتی در صورت قطع شدن اینترنت نیز می‌توانید به مطالعه ادامه دهید. تمام سوالات با پاسخ‌های کامل، تشریحی و تحلیلی ارائه شده‌اند تا دانش‌آموزان نه تنها برای پاسخ دادن به سوال، بلکه برای درک عمیق مفاهیم درسی آماده شوند.</p>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <i class="fas fa-book"></i>
+                <span class="stat-number">18</span>
+                <span class="stat-label">درس کامل</span>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-question-circle"></i>
+                <span class="stat-number">500+</span>
+                <span class="stat-label">سوال با پاسخ</span>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-file-alt"></i>
+                <span class="stat-number">100+</span>
+                <span class="stat-label">صفحه محتوا</span>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="stat-number">3</span>
+                <span class="stat-label">پایه تحصیلی</span>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <p><strong>📌 پیام مدیر مدرسه:</strong> «دانش گنجی است که هیچ دزدی نمی‌تواند آن را ببرد و هیچ آتشی نمی‌تواند بسوزاند. این گنج را با هم به اشتراک بگذاریم. هر کس چیزی بیاموزد و به دیگری بیاموزد، چراغی روشن کرده که راه هزاران نفر را روشن می‌کند.» امیدوارم این مجموعه گامی کوچک در مسیر روشنایی آینده شما باشد.</p>
+        </div>
+
+        <h3>🔍 فهرست سریع بخش‌های سایت</h3>
+        <div class="toc">
+            <div class="toc-card" onclick="goToSection('rules')">
+                <div class="toc-card-icon">📖</div>
+                <h3>قوانین و مقررات</h3>
+                <p>آیین‌نامه انضباطی، حقوق و تکالیف، مقررات آموزشی، نحوه نمره‌دهی و مراتب تربیتی</p>
+            </div>
+            <div class="toc-card" onclick="goToSection('grade7')">
+                <div class="toc-card-icon">🟡</div>
+                <h3>پایه هفتم</h3>
+                <p>فارسی، اجتماعی، علوم، هدیه، عربی، ریاضی — سوالات کامل با پاسخ تحلیلی</p>
+            </div>
+            <div class="toc-card" onclick="goToSection('grade8')">
+                <div class="toc-card-icon">🟠</div>
+                <h3>پایه هشتم</h3>
+                <p>فارسی، اجتماعی، علوم، هدیه، عربی، ریاضی — بیش از ۱۵۰ سوال تشریحی</p>
+            </div>
+            <div class="toc-card" onclick="goToSection('grade9')">
+                <div class="toc-card-icon">🔴</div>
+                <h3>پایه نهم</h3>
+                <p>فارسی، اجتماعی، علوم، هدیه، عربی، ریاضی — آمادگی کامل برای آزمون‌های نهایی</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>✨ ویژگی‌های منحصر به فرد این سایت</h2>
+        <ul>
+            <li>✅ <strong>محتوای کامل و جامع:</strong> تمام دروس سه پایه تحصیلی با صدها سوال و پاسخ تشریحی پوشش داده شده‌اند</li>
+            <li>✅ <strong>دسترسی رایگان و دائمی:</strong> هیچ‌گونه هزینه‌ای دریافت نمی‌شود و سایت همواره در دسترس است</li>
+            <li>✅ <strong>قابلیت کار آفلاین:</strong> پس از بارگذاری اولیه، تمام مطالب در حافظه دستگاه ذخیره می‌شود</li>
+            <li>✅ <strong>تم تاریک و روشن:</strong> با دکمه کنار صفحه، حالت شب را فعال کنید تا چشم‌هایتان خسته نشود</li>
+            <li>✅ <strong>جستجوی هوشمند:</strong> در کادر جستجو کلمه کلیدی را تایپ کرده و بلافاصله به مطلب مورد نظر برسید</li>
+            <li>✅ <strong>طراحی واکنش‌گرا:</strong> در گوشی، تبلت و رایانه به بهترین شکل قابل مشاهده است</li>
+            <li>✅ <strong>پاسخ‌های تحلیلی:</strong> پاسخ‌ها تنها به ذکر جواب اکتفا نمی‌کنند، بلکه مفاهیم را توضیح می‌دهند</li>
+            <li>✅ <strong>چاپ‌پذیری:</strong> می‌توانید هر صفحه را به راحتی چاپ یا به PDF تبدیل کنید</li>
+            <li>✅ <strong>بدون تبلیغات مزاحم:</strong> فضای سایت کاملاً آموزشی و آرام طراحی شده است</li>
+            <li>✅ <strong>محتوای قابل اطمینان:</strong> تمام مطالب بر اساس کتاب‌های درسی رسمی و آخرین تغییرات وزارت آموزش و پرورش</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>📋 راهنمای استفاده از سایت</h2>
+        <ol>
+            <li>از نوار بالای صفحه، پایه تحصیلی مورد نظر خود را انتخاب کنید</li>
+            <li>پس از ورود به صفحه هر پایه، دکمه‌های دروس ظاهر می‌شوند — روی نام درس کلیک کنید</li>
+            <li>برای بازگشت به دروس دیگر، کافی است روی نام درس دیگری کلیک کنید</li>
+            <li>در بالای صفحه کادر جستجو قرار دارد — کلمه یا عبارت مورد نظر را تایپ کنید</li>
+            <li>دکمه‌های پاسخ در سوالات، کلیک کنید تا پاسخ تشریحی نمایش داده شود</li>
+            <li>در سمت چپ صفحه دکمه ماه/خورشید برای تغییر تم قرار دارد</li>
+            <li>برای ذخیره سایت در تلفن همراه، از منوی مرورگر گزینه «افزودن به صفحه اصلی» را انتخاب کنید</li>
+        </ol>
+    </div>
+</section>
+
+<!-- ============== قوانین مدرسه ============== -->
+<section id="rules" class="section">
+    <div class="card">
+        <h2>📖 کتابچه جامع قوانین و مقررات مدرسه</h2>
+        <p><em>بر اساس قانون اساسی جمهوری اسلامی ایران و آیین‌نامه‌های رسمی وزارت آموزش و پرورش — ویرایش به‌روز ۱۴۰۵</em></p>
+
+        <h3>بخش اول: اصول و مبانی قانونی و فلسفه وجودی مدرسه</h3>
+        <p>مدرسه نهادی است که جامعه برای پرورش نسل آینده خود بنیان می‌نهد. این نهاد تنها مکانی برای انتقال دانش نیست، بلکه خانه دوم دانش‌آموزان است؛ جایی که شخصیت، نگرش، ارزش‌ها، مهارت‌های اجتماعی و هویت فرد شکل می‌گیرد. قانون اساسی جمهوری اسلامی ایران در اصل سی‌ام، دولت را موظف می‌داند که وسایل آموزش و پرورش رایگان را برای همه ملت تا پایان دوره متوسطه فراهم سازد.</p>
+        <p>مدرسه بر اساس سه اصل بنیادین اداره می‌شود: <strong>عدالت، مشارکت و پیشرفت.</strong> عدالت یعنی فرصت‌های برابر برای همه؛ مشارکت یعنی همکاری سه‌جانبه مدیریت، معلمان و اولیا؛ و پیشرفت یعنی حرکت مستمر به سوی بهتر شدن، نه تنها در نمره‌ها، بلکه در اخلاق، رفتار و مسئولیت‌پذیری.</p>
+        
+        <ul>
+            <li>پرورش نسلی مؤمن، آگاه، دانا، توانا و متعهد به اسلام و انقلاب اسلامی ایران</li>
+            <li>تأمین حق آموزش رایگان و برابر برای همه افراد ۶ تا ۱۸ سال بدون تبعیض</li>
+            <li>تربیت شهروند قانونمند، مسئول، وفادار به میهن، دوستدار عدالت و خیرخواه برای جامعه</li>
+            <li>رشد همه‌جانبه شخصیت دانش‌آموز: ایمانی، علمی، اخلاقی، جسمانی، هنری، اجتماعی و مهارتی</li>
+            <li>تقویت روحیه پرسشگری، پژوهش، خلاقیت، کار گروهی و اعتماد به نفس</li>
+            <li>آماده‌سازی دانش‌آموزان برای انتخاب آگاهانه رشته تحصیلی و مسیر شغلی آینده</li>
+            <li>حفظ کرامت و عزت نفس دانش‌آموزان و جلوگیری از هرگونه تحقیر، تمسخر یا تبعیض</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>📜 اصل ۳۰ قانون اساسی:</strong> «دولت موظف است وسایل آموزش و پرورش رایگان را برای همه ملت تا پایان دوره متوسطه فراهم سازد.» این اصل نه تنها یک حق قانونی، بلکه یک وظیفه ملی است. آموزش و پرورش ستون اصلی پیشرفت کشور است و سرمایه‌گذاری در آن، سرمایه‌گذاری در آینده کل ملت محسوب می‌شود.</p>
+        </div>
+
+        <h3>ارکان مدرسه و شرح کامل وظایف هر یک</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>رکن مدرسه</th><th>مسئولیت اصلی</th><th>وظایف تفصیلی</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>مدیر مدرسه</strong></td>
+                        <td>مسئولیت کلی و پاسخگویی</td>
+                        <td>اجرای دقیق مقررات دولتی، برنامه‌ریزی سالانه، نظارت بر عملکرد تمام کارکنان، پاسخگویی به اولیا و نهادهای مافوق، ایجاد محیط امن و آرام، مدیریت بحران‌ها، تقویت ارتباط مدرسه با جامعه محلی</td>
+                    </tr>
+                    <tr>
+                        <td><strong>شورای معلمان</strong></td>
+                        <td>تصمیم‌گیری آموزشی و تربیتی</td>
+                        <td>بررسی نتایج آزمون‌ها، تصویب روش‌های نوین تدریس، تصمیم‌گیری در مورد ارتقا یا تکرار پایه، بررسی موارد انضباطی، پیشنهاد برنامه‌های فرهنگی و ورزشی</td>
+                    </tr>
+                    <tr>
+                        <td><strong>انجمن اولیاء و مربیان</strong></td>
+                        <td>همکاری خانه و مدرسه</td>
+                        <td>برگزاری جلسات منظم، دریافت پیشنهادات اولیا، مشارکت در برنامه‌های فرهنگی و ورزشی، پیگیری مشکلات عمومی دانش‌آموزان</td>
+                    </tr>
+                    <tr>
+                        <td><strong>نماینده دانش‌آموزان</strong></td>
+                        <td>بازتاب صدای دانش‌آموزان</td>
+                        <td>جمع‌آوری پیشنهادات و انتقادات همکلاسی‌ها، انتقال سازنده به مدیریت، مشارکت در برنامه‌های فرهنگی</td>
+                    </tr>
+                    <tr>
+                        <td><strong>معلمان</strong></td>
+                        <td>تدریس، تربیت و راهنمایی</td>
+                        <td>تدریس دقیق مطالب درسی، ارزشیابی مستمر و منصفانه، ارائه بازخورد سازنده، ارتباط مؤثر با اولیا، الگوی اخلاقی بودن</td>
+                    </tr>
+                    <tr>
+                        <td><strong>مشاور مدرسه</strong></td>
+                        <td>راهنمایی تحصیلی و روانی</td>
+                        <td>مشاوره فردی و گروهی، برگزاری کارگاه‌های مهارت‌های زندگی، راهنمایی انتخاب رشته، پیگیری موارد آسیب‌پذیر</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>بخش دوم: حقوق تفصیلی دانش‌آموزان</h3>
+        <p>دانش‌آموز تنها کسی نیست که باید تکلیف انجام دهد؛ او دارای حقوق مشخص و قانونی نیز هست که باید توسط مدیریت، معلمان، اولیا و همکلاسی‌ها رعایت شود.</p>
+        
+        <h4>حقوق آموزشی و تحصیلی:</h4>
+        <ul>
+            <li>تحصیل رایگان در مدرسه دولتی بدون پرداخت هیچ‌گونه وجه اجباری</li>
+            <li>استفاده رایگان از کتاب‌های درسی، کلاس، آزمایشگاه، کارگاه، کتابخانه، سالن ورزشی</li>
+            <li>آگاهی کامل از برنامه درسی، جدول هفتگی، معیارهای نمره‌دهی، زمان‌بندی امتحانات</li>
+            <li>پرسیدن هرگونه سؤال در کلاس بدون ترس از تمسخر یا سرزنش</li>
+            <li>استفاده از مشاوره و راهنمایی تحصیلی، شغلی و روانی به صورت کاملاً رایگان و محرمانه</li>
+            <li>دریافت تکلیف متناسب با سطح درسی و زمان کافی برای انجام آن</li>
+            <li>فرصت جبران و تجدیدنظر در امتحانات طبق مقررات</li>
+            <li>مشارکت داوطلبانه در فعالیت‌های فوق‌برنامه</li>
+            <li>دریافت کارنامه تحصیلی تفصیلی با توضیحات کافی</li>
+        </ul>
+
+        <h4>حقوق عمومی، انسانی و اخلاقی:</h4>
+        <ul>
+            <li>برخورداری از احترام کامل و رفتار شایسته از سوی همه افراد مدرسه</li>
+            <li>محرمانه ماندن اطلاعات شخصی، خانوادگی، نمرات و وضعیت رفتاری</li>
+            <li>امنیت کامل جسمی و روانی در کلاس، راهرو، حیاط، سرویس بهداشتی و وسایل نقلیه مدرسه</li>
+            <li>برخورداری از فرصت برابر بدون تبعیض بر اساس جنسیت، قومیت، زبان، مذهب یا وضعیت اقتصادی</li>
+            <li>حق برخورداری از محیطی تمیز، سالم، بهداشتی و دارای نور و تهویه مناسب</li>
+            <li>حق داشتن زمان استراحت و زنگ تفریح کافی بین کلاس‌ها</li>
+            <li>حق شرکت در انتخابات شورای دانش‌آموزی و داشتن نماینده</li>
+            <li>حق ابراز نظر و پیشنهاد در مورد برنامه‌های مدرسه از طریق نماینده کلاس</li>
+            <li>حق حفظ حریم خصوصی و عدم بازرسی بدون دلیل قانونی و اطلاع قبلی</li>
+        </ul>
+
+        <h3>بخش سوم: تکالیف و وظایف دانش‌آموزان</h3>
+        <p>در کنار حقوق، دانش‌آموز دارای تکالیف و وظایفی است که رعایت آن‌ها برای حفظ نظم و پیشرفت علمی ضروری است.</p>
+        
+        <h4>تکالیف آموزشی:</h4>
+        <ul>
+            <li>حضور منظم و به موقع در کلاس‌های درس و فعالیت‌های مدرسه</li>
+            <li>انجام تکالیف و فعالیت‌های کلاسی با دقت و در موعد مقرر</li>
+            <li>مطالعه منظم و مستمر دروس و آمادگی برای آزمون‌ها</li>
+            <li>احترام به معلمان و توجه کامل به تدریس آن‌ها در کلاس</li>
+            <li>مشارکت فعال در کار گروهی و فعالیت‌های کلاسی</li>
+            <li>حفظ امانت‌های مدرسه شامل کتاب، ابزار آزمایشگاه و تجهیزات ورزشی</li>
+        </ul>
+
+        <h4>تکالیف انضباطی و اخلاقی:</h4>
+        <ul>
+            <li>رعایت پوشش مناسب و یونیفرم رسمی مدرسه در تمام روزهای تحصیلی</li>
+            <li>رعایت نظافت شخصی و پاکیزگی محیط مدرسه</li>
+            <li>احترام به همکلاسی‌ها، معلمان، کادر اجرایی و خدمتگزاران مدرسه</li>
+            <li>پرهیز از هرگونه خشونت فیزیکی یا کلامی، قلدری، تمسخر یا آزار دیگران</li>
+            <li>عدم همراه داشتن وسایل غیرمجاز مانند تلفن همراه (مگر با اجازه)، وسایل خطرناک و...</li>
+            <li>حفظ اموال عمومی مدرسه و جبران خسارت در صورت آسیب</li>
+            <li>رعایت آداب اسلامی و اخلاقی در گفتار و رفتار</li>
+            <li>شرکت منظم در مراسم صبحگاه، نماز جماعت و برنامه‌های فرهنگی</li>
+        </ul>
+
+        <h3>بخش چهارم: نظام ارزشیابی و نمره‌دهی</h3>
+        <p>نظام ارزشیابی در دوره اول متوسطه بر اساس آیین‌نامه اجرایی مدارس و به دو صورت <strong>توصیفی-کیفی</strong> و <strong>عددی</strong> انجام می‌شود.</p>
+        
+        <h4>انواع ارزشیابی:</h4>
+        <ul>
+            <li><strong>ارزشیابی تشخیصی:</strong> در ابتدای سال تحصیلی برای شناخت سطح دانش‌آموزان</li>
+            <li><strong>ارزشیابی تکوینی (مستمر):</strong> در طول سال تحصیلی به صورت پرسش‌های کلاسی، تکالیف، پروژه و آزمون‌های کوتاه</li>
+            <li><strong>ارزشیابی تراکمی (پایانی):</strong> در پایان هر نوبت تحصیلی به صورت آزمون کتبی جامع</li>
+        </ul>
+
+        <h4>مقیاس نمره‌دهی:</h4>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>نمره</th><th>وضعیت</th><th>توضیح</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>۲۰-۱۸</strong></td><td>عالی</td><td>تسلط کامل بر مفاهیم و توانایی کاربرد خلاقانه</td></tr>
+                    <tr><td><strong>۱۷-۱۵</strong></td><td>خوب</td><td>درک خوب مفاهیم با تسلط نسبی</td></tr>
+                    <tr><td><strong>۱۴-۱۲</strong></td><td>متوسط</td><td>درک پایه‌ای مفاهیم با نیاز به تمرین بیشتر</td></tr>
+                    <tr><td><strong>۱۱-۱۰</strong></td><td>قابل قبول</td><td>حداقل نمره قبولی، نیاز به تلاش مضاعف</td></tr>
+                    <tr><td><strong>کمتر از ۱۰</strong></td><td>نیاز به تلاش</td><td>عدم تسلط کافی، نیاز به جبران</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info-box">
+            <p><strong>ℹ️ نکته مهم:</strong> نمره پایانی هر درس از مجموع نمرات مستمر (۲۰ نمره) و نمره پایانی (۲۰ نمره) با احتساب ضریب هر نوبت محاسبه می‌شود. در نوبت اول، نمره مستمر ضریب ۱ و نمره پایانی ضریب ۲ دارد.</p>
+        </div>
+
+        <h3>بخش پنجم: مقررات انضباطی و مراتب تربیتی</h3>
+        <p>در صورت تخلف از مقررات مدرسه، مراتب تربیتی به ترتیب زیر اعمال می‌شود:</p>
+        
+        <ol>
+            <li><strong>تذکر شفاهی:</strong> در موارد جزئی و اولین تخلف توسط معلم یا ناظم</li>
+            <li><strong>تذکر کتبی:</strong> ثبت در پرونده دانش‌آموز در صورت تکرار تخلف</li>
+            <li><strong>احضار ولی:</strong> دعوت از اولیا برای همفکری و حل مسئله</li>
+            <li><strong>کسر نمره انضباط:</strong> تا سقف ۵ نمره با تصویب شورای مدرسه</li>
+            <li><strong>تعلیق موقت:</strong> محرومیت از حضور در کلاس به مدت محدود (حداکثر ۳ روز)</li>
+            <li><strong>انتقال به مدرسه دیگر:</strong> در موارد بسیار حاد با هماهنگی اداره آموزش و پرورش</li>
+        </ol>
+
+        <div class="warning-box">
+            <p><strong>⚠️ تخلفات حاد:</strong> مواردی مانند تقلب در آزمون‌های رسمی، جعل اسناد، سرقت، درگیری فیزیکی شدید، استفاده از مواد مخدر یا دخانیات، و توهین به مقدسات، به صورت ویژه رسیدگی و ممکن است منجر به اخراج موقت یا دائم شود.</p>
+        </div>
+
+        <h3>بخش ششم: قوانین مربوط به امتحانات</h3>
+        <ul>
+            <li>حضور در جلسه امتحان با کارت شناسایی و لوازم مجاز ضروری است</li>
+            <li>ورود دیرهنگام بیش از ۱۵ دقیقه از شروع امتحان ممنوع است</li>
+            <li>همراه داشتن هرگونه وسیله الکترونیکی از جمله تلفن همراه و ساعت هوشمند ممنوع است</li>
+            <li>تقلب یا کمک به تقلب منجر به صفر شدن نمره آن درس و درج در پرونده می‌شود</li>
+            <li>در صورت بیماری، ارائه گواهی پزشکی معتبر برای امتحان جایگزین الزامی است</li>
+            <li>اعتراض به نمره باید ظرف ۴۸ ساعت پس از اعلام نتایج به صورت کتبی ثبت شود</li>
+            <li>خروج از جلسه امتحان قبل از پایان زمان مجاز نیست</li>
+        </ul>
+
+        <h3>بخش هفتم: حضور و غیاب و تأخیر</h3>
+        <ul>
+            <li>ساعت شروع کلاس‌ها ۷:۳۰ صبح است و دانش‌آموزان باید ۱۰ دقیقه قبل در مدرسه حاضر باشند</li>
+            <li>غیبت غیرموجه بیش از ۳ روز در ماه منجر به احضار ولی و کسر نمره انضباط می‌شود</li>
+            <li>غیبت موجه نیازمند ارائه گواهی پزشکی یا عذرنامه معتبر از ولی است</li>
+            <li>تأخیر بیش از ۳ بار در ماه منجر به تذکر کتبی می‌شود</li>
+            <li>غیبت بیش از ۱۶ روز در هر نیمسال بدون عذر موجه، منجر به حذف درس می‌شود</li>
+            <li>خروج از مدرسه در ساعات تحصیل فقط با اجازه کتبی ولی و اطلاع مدیر امکان‌پذیر است</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============== پایه هفتم ============== -->
+<section id="grade7" class="section">
+    <div class="card">
+        <h2>🟡 مطالب آموزشی پایه هفتم</h2>
+        <p>در این بخش، تمام دروس پایه هفتم شامل سوالات امتحانی، پاسخ‌های تشریحی و نکات کلیدی هر درس ارائه شده است.</p>
+        
+        <div class="subject-buttons">
+            <button class="subject-btn active" data-subject="g7-persian">📚 فارسی</button>
+            <button class="subject-btn" data-subject="g7-math">🔢 ریاضی</button>
+            <button class="subject-btn" data-subject="g7-science">🔬 علوم تجربی</button>
+            <button class="subject-btn" data-subject="g7-social">🌍 مطالعات اجتماعی</button>
+            <button class="subject-btn" data-subject="g7-arabic">🕌 عربی</button>
+            <button class="subject-btn" data-subject="g7-religious">📖 هدیه‌های آسمانی</button>
+            <button class="subject-btn" data-subject="g7-english">🔤 زبان انگلیسی</button>
+        </div>
+    </div>
+
+    <!-- فارسی هفتم -->
+    <div id="g7-persian" class="subject-content active">
+        <div class="card">
+            <h2>📚 درس فارسی پایه هفتم</h2>
+            <p>فارسی پایه هفتم شامل ۱۷ درس اصلی است که در آن‌ها مفاهیم دستوری، آرایه‌های ادبی، تاریخ ادبیات و متون کهن آموزش داده می‌شود.</p>
+            
+            <h3>مفاهیم کلیدی دستوری</h3>
+            <ul>
+                <li><strong>نهاد و گزاره:</strong> هر جمله از دو بخش نهاد (کننده کار) و گزاره (خبر درباره نهاد) تشکیل می‌شود</li>
+                <li><strong>مفعول:</strong> کلمه‌ای که کار بر آن واقع می‌شود و معمولاً با «را» می‌آید</li>
+                <li><strong>مسند:</strong> خبری که به نهاد نسبت داده می‌شود (در جملات اسنادی)</li>
+                <li><strong>متمم:</strong> کلمه‌ای که با حرف اضافه (از، به، با، در و...) می‌آید</li>
+                <li><strong>قید:</strong> کلمه‌ای که زمان، مکان، حالت یا چگونگی انجام کار را نشان می‌دهد</li>
+            </ul>
+
+            <h3>آرایه‌های ادبی پایه هفتم</h3>
+            <ul>
+                <li><strong>تشبیه:</strong> مانند کردن چیزی به چیز دیگر با استفاده از ادات تشبیه (مانند، چون، همچون)</li>
+                <li><strong>تلمیح:</strong> اشاره به داستان، آیه، حدیث یا رویداد تاریخی در شعر یا نثر</li>
+                <li><strong>تشخیص (جان‌بخشی):</strong> نسبت دادن ویژگی‌های انسانی به اشیاء بی‌جان</li>
+                <li><strong>تضاد:</strong> آوردن دو کلمه متضاد در یک بیت یا جمله</li>
+                <li><strong>مراعات نظیر:</strong> آوردن کلمات مرتبط در یک زمینه (مثل ابر، باد، باران)</li>
+                <li><strong>سجع:</strong> هماهنگی در پایان جملات نثر مانند قافیه در شعر</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>معنی واژه‌های «مهر»، «فراست» و «تأمل» را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>مهر:</strong> محبت، عشق، علاقه / خورشید / ماه مهر</p>
+                        <p><strong>فراست:</strong> هوشیاری، زیرکی، قدرت تشخیص حقیقت</p>
+                        <p><strong>تأمل:</strong> اندیشیدن، فکر کردن عمیق، دقت و درنگ در موضوع</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>در بیت «ای نام تو بهترین سرآغاز / هر نام تو یاد کردیم، آن نام تو باشد» آرایه ادبی را مشخص کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>آرایه‌های موجود:</strong></p>
+                        <p>۱. <strong>تکرار:</strong> کلمه «نام» و «تو» چند بار تکرار شده است</p>
+                        <p>۲. <strong>تضاد معنوی:</strong> بین «سرآغاز» و مفهوم پایان</p>
+                        <p>۳. <strong>مراعات نظیر:</strong> نام و یاد کردن</p>
+                        <p>این بیت سرآغاز بوستان سعدی است و به حمد خداوند می‌پردازد.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>نهاد، گزاره و مفعول را در جمله «دانش‌آموزان کوشا کتاب را با دقت می‌خوانند» مشخص کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>نهاد:</strong> دانش‌آموزان کوشا</p>
+                        <p><strong>مفعول:</strong> کتاب (با نشانه «را»)</p>
+                        <p><strong>قید:</strong> با دقت</p>
+                        <p><strong>فعل:</strong> می‌خوانند</p>
+                        <p><strong>گزاره:</strong> کتاب را با دقت می‌خوانند (همه جمله منهای نهاد)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>ابیات زیر از کدام شاعران است؟</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>الف)</strong> «بنی‌آدم اعضای یکدیگرند / که در آفرینش ز یک گوهرند» → <strong>سعدی</strong> (گلستان)</p>
+                        <p><strong>ب)</strong> «توانا بُوَد هر که دانا بُوَد / ز دانش دل پیر بُرنا بُوَد» → <strong>فردوسی</strong> (شاهنامه)</p>
+                        <p><strong>ج)</strong> «هر که آمد نقش خود بنوشت / رفت و آنچه نوشت، باقی است» → <strong>عمر خیام</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۵</span><span>معنی بیت «به نام خداوند جان و خرد / کزین برتر اندیشه برنگذرد» را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p>به نام خداوندی که آفریننده جان (زندگی) و خرد (عقل) است، خداوندی که اندیشه و فکر هیچ موجودی نمی‌تواند از مقام و عظمت او فراتر رود و او را به طور کامل درک کند.</p>
+                        <p><strong>نکات دستوری:</strong></p>
+                        <p>• «کزین» = که از این (ترکیب اضافی)</p>
+                        <p>• «برنگذرد» = فراتر نمی‌رود</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۶</span><span>انواع «را» در فارسی با مثال توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. «را» نشانه مفعول:</strong> کتاب را خواندم.</p>
+                        <p><strong>۲. «را» به معنی «برای»:</strong> این کتاب را تو خریدم. (برای تو)</p>
+                        <p><strong>۳. «را» به معنی «در/به»:</strong> شهر را گشتم. (در شهر)</p>
+                        <p><strong>۴. «را» فک اضافه:</strong> مرا دوست دارد. (دوستِ من را)</p>
+                        <p><strong>۵. «را» زائد یا تأکیدی:</strong> در متون کهن برای تأکید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ریاضی هفتم -->
+    <div id="g7-math" class="subject-content">
+        <div class="card">
+            <h2>🔢 درس ریاضی پایه هفتم</h2>
+            <p>ریاضی پایه هفتم شامل ۹ فصل است: راهبردهای حل مسئله، عددهای صحیح، جبر و معادله، هندسه و استدلال، شمارنده‌ها و اعداد اول، سطح و حجم، توان و جذر، بردار و مختصات، و آمار و احتمال.</p>
+
+            <h3>مفاهیم کلیدی فصل‌ها</h3>
+            
+            <h4>فصل اول: راهبردهای حل مسئله</h4>
+            <ul>
+                <li><strong>الگوسازی:</strong> استفاده از شکل، جدول یا نمودار برای حل مسئله</li>
+                <li><strong>زیرمسئله:</strong> تقسیم مسئله بزرگ به مسائل کوچک‌تر</li>
+                <li><strong>حل مسئله ساده‌تر:</strong> حل حالت ساده‌تر و تعمیم به مسئله اصلی</li>
+                <li><strong>حدس و آزمایش:</strong> حدس زدن جواب و بررسی صحت آن</li>
+                <li><strong>روش نمادین:</strong> استفاده از نمادهای ریاضی برای بیان مسئله</li>
+            </ul>
+
+            <h4>فصل دوم: اعداد صحیح</h4>
+            <ul>
+                <li>اعداد صحیح شامل اعداد مثبت، منفی و صفر هستند</li>
+                <li>قرینه عدد a برابر با -a است</li>
+                <li>قدرمطلق عدد (|a|) فاصله آن عدد تا صفر روی محور اعداد</li>
+                <li>جمع دو عدد هم‌علامت: قدرمطلق‌ها را جمع و علامت مشترک را می‌گذاریم</li>
+                <li>جمع دو عدد مختلف‌العلامت: قدرمطلق بزرگ‌تر منهای کوچک‌تر با علامت بزرگ‌تر</li>
+            </ul>
+
+            <h4>فصل سوم: جبر و معادله</h4>
+            <ul>
+                <li>عبارت جبری ترکیبی از اعداد و حروف با عملگرها</li>
+                <li>جملات متشابه: جملاتی که قسمت حرفی یکسان دارند (مانند 2x و 5x)</li>
+                <li>معادله: تساوی دو عبارت جبری</li>
+                <li>حل معادله: یافتن مقدار مجهول که تساوی را برقرار کند</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>حاصل عبارت (-5) + (+8) + (-3) + (+2) را به دست آورید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>راه‌حل:</strong></p>
+                        <p>مرحله ۱: اعداد مثبت را با هم جمع می‌کنیم: (+8) + (+2) = +10</p>
+                        <p>مرحله ۲: اعداد منفی را با هم جمع می‌کنیم: (-5) + (-3) = -8</p>
+                        <p>مرحله ۳: حالا دو حاصل را با هم جمع می‌کنیم: (+10) + (-8) = +2</p>
+                        <p><strong>جواب نهایی: +2</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>معادله 3x + 7 = 22 را حل کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>راه‌حل گام به گام:</strong></p>
+                        <p>مرحله ۱: عدد 7 را به سمت راست تساوی منتقل می‌کنیم (با تغییر علامت):</p>
+                        <p>3x = 22 - 7</p>
+                        <p>3x = 15</p>
+                        <p>مرحله ۲: دو طرف را بر 3 تقسیم می‌کنیم:</p>
+                        <p>x = 15 ÷ 3</p>
+                        <p><strong>x = 5</strong></p>
+                        <p>بررسی: 3(5) + 7 = 15 + 7 = 22 ✓</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>مجموع زوایای داخلی یک پنج‌ضلعی چقدر است؟</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فرمول:</strong> مجموع زوایای داخلی n ضلعی = (n - 2) × 180</p>
+                        <p>برای پنج‌ضلعی: n = 5</p>
+                        <p>مجموع = (5 - 2) × 180 = 3 × 180 = <strong>540 درجه</strong></p>
+                        <p><strong>توضیح:</strong> هر چندضلعی را می‌توان به (n-2) مثلث تقسیم کرد. چون مجموع زوایای هر مثلث 180 درجه است، مجموع زوایای داخلی چندضلعی برابر با (n-2) × 180 می‌شود.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>مقسوم‌علیه‌های مشترک دو عدد 12 و 18 را بنویسید و ب.م.م را پیدا کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>مقسوم‌علیه‌های 12:</strong> 1, 2, 3, 4, 6, 12</p>
+                        <p><strong>مقسوم‌علیه‌های 18:</strong> 1, 2, 3, 6, 9, 18</p>
+                        <p><strong>مقسوم‌علیه‌های مشترک:</strong> 1, 2, 3, 6</p>
+                        <p><strong>ب.م.م (بزرگ‌ترین مقسوم‌علیه مشترک):</strong> <strong>6</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۵</span><span>مساحت دایره‌ای به شعاع 7 سانتی‌متر را حساب کنید. (π = 22/7)</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فرمول:</strong> مساحت دایره = π × r²</p>
+                        <p>r = 7 سانتی‌متر</p>
+                        <p>مساحت = (22/7) × 7 × 7</p>
+                        <p>مساحت = (22/7) × 49</p>
+                        <p>مساحت = 22 × 7 = <strong>154 سانتی‌متر مربع</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۶</span><span>عدد 2 به توان 5 چقدر می‌شود؟ و جذر 144 چیست؟</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>2 به توان 5:</strong></p>
+                        <p>2⁵ = 2 × 2 × 2 × 2 × 2 = <strong>32</strong></p>
+                        <p><strong>جذر 144:</strong></p>
+                        <p>√144 = 12 (چون 12 × 12 = 144)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- علوم هفتم -->
+    <div id="g7-science" class="subject-content">
+        <div class="card">
+            <h2>🔬 درس علوم تجربی پایه هفتم</h2>
+            <p>علوم پایه هفتم شامل ۱۵ فصل از موضوعات زیست‌شناسی، شیمی، فیزیک و زمین‌شناسی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>تفاوت سلول گیاهی و جانوری را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تفاوت‌های اصلی:</strong></p>
+                        <p><strong>۱. دیواره سلولی:</strong> سلول گیاهی دارد (از جنس سلولز) اما سلول جانوری ندارد</p>
+                        <p><strong>۲. کلروپلاست:</strong> سلول گیاهی دارد (برای فتوسنتز) اما سلول جانوری ندارد</p>
+                        <p><strong>۳. واکوئل مرکزی:</strong> در سلول گیاهی بزرگ و مرکزی است اما در سلول جانوری کوچک یا وجود ندارد</p>
+                        <p><strong>۴. شکل:</strong> سلول گیاهی معمولاً منظم و مکعبی است اما سلول جانوری نامنظم است</p>
+                        <p><strong>۵. سانتروزوم:</strong> در سلول جانوری وجود دارد اما در سلول گیاهی معمولاً وجود ندارد</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>فتوسنتز چیست؟ معادله آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فتوسنتز:</strong> فرآیندی است که در آن گیاهان سبز با استفاده از انرژی نور خورشید، آب و کربن دی‌اکسید را به گلوکز (قند) و اکسیژن تبدیل می‌کنند.</p>
+                        <p><strong>محل انجام:</strong> کلروپلاست (سبزدانه) برگ‌ها</p>
+                        <p><strong>معادله فتوسنتز:</strong></p>
+                        <p>آب + کربن دی‌اکسید + نور خورشید → گلوکز + اکسیژن</p>
+                        <p>6CO₂ + 6H₂O + نور → C₆H₁₂O₆ + 6O₂</p>
+                        <p><strong>اهمیت:</strong> تولید غذا برای گیاه، تولید اکسیژن برای تنفس موجودات زنده، کاهش کربن دی‌اکسید هوا</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>سه حالت ماده را نام برده و ویژگی هر کدام را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. جامد:</strong></p>
+                        <ul>
+                            <li>شکل و حجم مشخص دارد</li>
+                            <li>ذرات آن بسیار نزدیک به هم و در موقعیت ثابت هستند</li>
+                            <li>قابل تراکم نیست</li>
+                            <li>مثال: سنگ، یخ، چوب</li>
+                        </ul>
+                        <p><strong>۲. مایع:</strong></p>
+                        <ul>
+                            <li>حجم مشخص دارد اما شکل ظرف را به خود می‌گیرد</li>
+                            <li>ذرات آن نزدیک به هم اما قابل حرکت هستند</li>
+                            <li>قابل تراکم نیست</li>
+                            <li>مثال: آب، روغن، الکل</li>
+                        </ul>
+                        <p><strong>۳. گاز:</strong></p>
+                        <ul>
+                            <li>نه شکل مشخص دارد نه حجم مشخص (کل ظرف را پر می‌کند)</li>
+                            <li>ذرات آن بسیار دور از هم و با سرعت حرکت می‌کنند</li>
+                            <li>قابل تراکم است</li>
+                            <li>مثال: هوا، اکسیژن، کربن دی‌اکسید</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>قانون اول نیوتون (لَختی) را بیان کنید و با مثال توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>قانون اول نیوتون:</strong> هر جسم ساکن تمایل دارد ساکن بماند و هر جسم متحرک تمایل دارد با سرعت ثابت در خط راست به حرکت خود ادامه دهد، مگر اینکه نیروی خارجی بر آن اثر کند.</p>
+                        <p><strong>لَختی (اینرسی):</strong> خاصیت مقاومت جسم در برابر تغییر وضعیت حرکتی آن.</p>
+                        <p><strong>مثال‌ها:</strong></p>
+                        <ul>
+                            <li>وقتی اتوبوس ناگهان ترمز می‌کند، مسافران به جلو پرتاب می‌شوند (چون بدن آن‌ها تمایل به ادامه حرکت دارد)</li>
+                            <li>وقتی اتوبوس ناگهان حرکت می‌کند، مسافران به عقب پرت می‌شوند (چون بدن تمایل به سکون دارد)</li>
+                            <li>تکان دادن درخت برای ریختن میوه (میوه تمایل به سکون دارد اما شاخه حرکت می‌کند)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۵</span><span>انواع سنگ‌ها را نام برده و چگونگی تشکیل هر کدام را توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. سنگ‌های آذرین:</strong> از سرد شدن و انجماد ماگما (مواد مذاب درون زمین) یا گدازه (مواد مذاب بیرون آمده) تشکیل می‌شوند.</p>
+                        <p>مثال: گرانیت، بازالت</p>
+                        <p><strong>۲. سنگ‌های رسوبی:</strong> از تجمع و سیمان شدن ذرات ریز سنگ‌ها، فسیل موجودات و مواد معدنی در بستر رودها، دریاها و دریاچه‌ها تشکیل می‌شوند.</p>
+                        <p>مثال: ماسه سنگ، آهک، گچ</p>
+                        <p><strong>۳. سنگ‌های دگرگونی:</strong> از تغییر سنگ‌های قبلی تحت تأثیر فشار و دمای زیاد در درون زمین تشکیل می‌شوند.</p>
+                        <p>مثال: مرمر (از آهک)، اسلیت (از شیل)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اجتماعی هفتم -->
+    <div id="g7-social" class="subject-content">
+        <div class="card">
+            <h2>🌍 درس مطالعات اجتماعی پایه هفتم</h2>
+            <p>مطالعات اجتماعی هفتم شامل ۲۴ درس در بخش‌های جغرافیا، تاریخ و مدنی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>حقوق شهروندی را تعریف کنید و چند نمونه از حقوق شهروندی را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تعریف:</strong> حقوق شهروندی مجموعه‌ای از حقوق است که دولت برای تمام شهروندان خود تضمین می‌کند و در مقابل، شهروندان نیز دارای وظایفی نسبت به کشور و جامعه هستند.</p>
+                        <p><strong>نمونه‌های حقوق شهروندی:</strong></p>
+                        <ul>
+                            <li>حق آموزش و تحصیل رایگان</li>
+                            <li>حق بهداشت و درمان</li>
+                            <li>حق آزادی بیان و اندیشه</li>
+                            <li>حق مسکن و کار</li>
+                            <li>حق انتخاب شغل</li>
+                            <li>حق امنیت جانی و مالی</li>
+                            <li>حق شرکت در انتخابات</li>
+                            <li>حق برابری در برابر قانون</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>قاره آسیا را از نظر موقعیت جغرافیایی، وسعت و جمعیت توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>موقعیت جغرافیایی:</strong> آسیا بزرگ‌ترین قاره جهان است که در نیمکره شمالی و شرقی کره زمین قرار دارد. از شمال به اقیانوس منجمد شمالی، از جنوب به اقیانوس هند، از شرق به اقیانوس آرام و از غرب به اروپا و آفریقا محدود است.</p>
+                        <p><strong>وسعت:</strong> حدود ۴۴ میلیون کیلومتر مربع (۳۰٪ خشکی‌های زمین)</p>
+                        <p><strong>جمعیت:</strong> بیش از ۴.۵ میلیارد نفر (حدود ۶۰٪ جمعیت جهان)</p>
+                        <p><strong>کشورهای مهم:</strong> چین، هند، روسیه، اندونزی، ژاپن، ایران</p>
+                        <p><strong>ویژگی‌های خاص:</strong> دارای بلندترین قله جهان (اورست)، بزرگ‌ترین دریاچه جهان (خزر)، پرجمعیت‌ترین کشورها، و تنوع اقلیمی بسیار زیاد</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>امپراتوری هخامنشی توسط چه کسی و در چه سالی تأسیس شد؟ مهم‌ترین دستاوردهای آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>مؤسس:</strong> کوروش بزرگ (کوروش دوم)</p>
+                        <p><strong>سال تأسیس:</strong> ۵۵۰ قبل از میلاد (با شکست پادشاهی ماد)</p>
+                        <p><strong>دستاوردهای مهم:</strong></p>
+                        <ul>
+                            <li>تأسیس بزرگ‌ترین امپراتوری باستانی جهان تا آن زمان</li>
+                            <li>صدور منشور حقوق بشر (منشور کوروش)</li>
+                            <li>احترام به ادیان و فرهنگ‌های مختلف</li>
+                            <li>ساخت شاهراه شاهی برای ارتباط سریع</li>
+                            <li>ایجاد سیستم پستی منظم (چاپارخانه)</li>
+                            <li>ساخت تخت جمشید به عنوان پایتخت تشریفاتی (توسط داریوش)</li>
+                            <li>ضرب سکه طلا به نام «داریک»</li>
+                            <li>ساخت کانال سوئز باستانی بین دریای سرخ و نیل</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>انواع ناهمواری‌های زمین را نام ببرید و توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. کوه‌ها:</strong> ناهمواری‌های برجسته با ارتفاع بیش از ۶۰۰ متر از سطح دریا. معمولاً به صورت رشته‌کوه هستند. مثل البرز و زاگرس.</p>
+                        <p><strong>۲. تپه‌ها:</strong> ناهمواری‌های با ارتفاع کمتر از کوه (کمتر از ۶۰۰ متر) و با شیب ملایم‌تر.</p>
+                        <p><strong>۳. دشت‌ها:</strong> سرزمین‌های هموار و صاف با ارتفاع کم. مناسب برای کشاورزی.</p>
+                        <p><strong>۴. فلات‌ها:</strong> سرزمین‌های نسبتاً هموار اما مرتفع (بالای ۶۰۰ متر از سطح دریا). مثل فلات ایران.</p>
+                        <p><strong>۵. دره‌ها:</strong> فرورفتگی‌های طویل بین کوه‌ها که معمولاً رودخانه از آن‌ها می‌گذرد.</p>
+                        <p><strong>۶. جلگه‌ها:</strong> دشت‌های هموار کنار رودخانه‌ها یا دریاها که از رسوبات آبرفتی تشکیل شده‌اند و خاک حاصلخیز دارند.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- عربی هفتم -->
+    <div id="g7-arabic" class="subject-content">
+        <div class="card">
+            <h2>🕌 درس عربی پایه هفتم</h2>
+            <p>عربی پایه هفتم شامل ۱۰ درس است که در آن‌ها الفبای عربی، کلمات پایه، جملات ساده و قواعد مقدماتی آموزش داده می‌شود.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>معانی کلمات زیر را بنویسید: کتاب، مکتبة، طالِب، مُعَلِّم، مدرسة</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>کِتاب:</strong> کتاب</p>
+                        <p><strong>مَکتَبَة:</strong> کتابخانه</p>
+                        <p><strong>طالِب:</strong> دانش‌آموز (پسر) - مؤنث آن: طالِبَة</p>
+                        <p><strong>مُعَلِّم:</strong> آموزگار (پسر) - مؤنث آن: مُعَلِّمَة</p>
+                        <p><strong>مَدرَسَة:</strong> مدرسه</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>جمله «الطالِبُ یَکتُبُ فی الدَّفتَر» را ترجمه کنید و اعراب کلمات را مشخص کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>ترجمه:</strong> دانش‌آموز در دفتر می‌نویسد.</p>
+                        <p><strong>تجزیه و ترکیب:</strong></p>
+                        <p>• <strong>الطالِبُ:</strong> مبتدا (نهاد)، مرفوع با ضمه</p>
+                        <p>• <strong>یَکتُبُ:</strong> فعل مضارع، مرفوع با ضمه</p>
+                        <p>• <strong>فی:</strong> حرف جر</p>
+                        <p>• <strong>الدَّفتَرِ:</strong> اسم مجرور با کسره (بعد از حرف جر)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>اعداد ۱ تا ۱۰ را به عربی بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱:</strong> واحِد</p>
+                        <p><strong>۲:</strong> اِثنان</p>
+                        <p><strong>۳:</strong> ثَلاثة</p>
+                        <p><strong>۴:</strong> أربَعة</p>
+                        <p><strong>۵:</strong> خَمسة</p>
+                        <p><strong>۶:</strong> سِتّة</p>
+                        <p><strong>۷:</strong> سَبعة</p>
+                        <p><strong>۸:</strong> ثَمانیة</p>
+                        <p><strong>۹:</strong> تِسعة</p>
+                        <p><strong>۱۰:</strong> عَشَرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- هدیه هفتم -->
+    <div id="g7-religious" class="subject-content">
+        <div class="card">
+            <h2>📖 درس هدیه‌های آسمانی پایه هفتم</h2>
+            <p>هدیه‌های آسمانی هفتم شامل ۱۷ درس در زمینه‌های اخلاق، عقاید، احکام و تاریخ اسلام است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>اصول دین در اسلام کدام‌اند؟ توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>پنج اصل دین:</strong></p>
+                        <p><strong>۱. توحید:</strong> ایمان به یگانگی خداوند، اینکه خدا یکی است و شریک و همتایی ندارد</p>
+                        <p><strong>۲. عدل:</strong> ایمان به اینکه خداوند عادل است و به هیچ‌کس ظلم نمی‌کند</p>
+                        <p><strong>۳. نبوت:</strong> ایمان به اینکه خداوند پیامبرانی برای هدایت انسان‌ها فرستاده است</p>
+                        <p><strong>۴. امامت:</strong> ایمان به دوازده امام معصوم پس از پیامبر اسلام (ص)</p>
+                        <p><strong>۵. معاد:</strong> ایمان به روز قیامت و حسابرسی اعمال انسان‌ها</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>نمازهای واجب روزانه را نام برده و تعداد رکعت هر یک را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. نماز صبح:</strong> ۲ رکعت</p>
+                        <p><strong>۲. نماز ظهر:</strong> ۴ رکعت</p>
+                        <p><strong>۳. نماز عصر:</strong> ۴ رکعت</p>
+                        <p><strong>۴. نماز مغرب:</strong> ۳ رکعت</p>
+                        <p><strong>۵. نماز عشا:</strong> ۴ رکعت</p>
+                        <p><strong>مجموع:</strong> ۱۷ رکعت در روز</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- انگلیسی هفتم -->
+    <div id="g7-english" class="subject-content">
+        <div class="card">
+            <h2>🔤 درس زبان انگلیسی پایه هفتم</h2>
+            <p>زبان انگلیسی هفتم شامل ۸ درس است که در آن‌ها مکالمات پایه، گرامر ساده و لغات روزمره آموزش داده می‌شود.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>جمله "My name is Ali and I am 13 years old" را به فارسی ترجمه کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>ترجمه:</strong> نام من علی است و من ۱۳ ساله هستم.</p>
+                        <p><strong>تجزیه:</strong></p>
+                        <p>• My = مال من</p>
+                        <p>• name = نام</p>
+                        <p>• is = است</p>
+                        <p>• Ali = علی</p>
+                        <p>• and = و</p>
+                        <p>• I = من</p>
+                        <p>• am = هستم</p>
+                        <p>• 13 years old = ۱۳ ساله</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>روزهای هفته را به انگلیسی بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>شنبه:</strong> Saturday</p>
+                        <p><strong>یکشنبه:</strong> Sunday</p>
+                        <p><strong>دوشنبه:</strong> Monday</p>
+                        <p><strong>سه‌شنبه:</strong> Tuesday</p>
+                        <p><strong>چهارشنبه:</strong> Wednesday</p>
+                        <p><strong>پنج‌شنبه:</strong> Thursday</p>
+                        <p><strong>جمعه:</strong> Friday</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== پایه هشتم ============== -->
+<section id="grade8" class="section">
+    <div class="card">
+        <h2>🟠 مطالب آموزشی پایه هشتم</h2>
+        <p>در این بخش، تمام دروس پایه هشتم شامل سوالات امتحانی، پاسخ‌های تشریحی و نکات کلیدی هر درس ارائه شده است.</p>
+        
+        <div class="subject-buttons">
+            <button class="subject-btn active" data-subject="g8-persian">📚 فارسی</button>
+            <button class="subject-btn" data-subject="g8-math">🔢 ریاضی</button>
+            <button class="subject-btn" data-subject="g8-science">🔬 علوم تجربی</button>
+            <button class="subject-btn" data-subject="g8-social">🌍 مطالعات اجتماعی</button>
+            <button class="subject-btn" data-subject="g8-arabic">🕌 عربی</button>
+            <button class="subject-btn" data-subject="g8-religious">📖 هدیه‌های آسمانی</button>
+        </div>
+    </div>
+
+    <!-- فارسی هشتم -->
+    <div id="g8-persian" class="subject-content active">
+        <div class="card">
+            <h2>📚 درس فارسی پایه هشتم</h2>
+            <p>فارسی پایه هشتم شامل ۱۷ درس با متون ادبی کهن و معاصر، دستور زبان و آرایه‌های ادبی پیشرفته‌تر است.</p>
+
+            <h3>آرایه‌های ادبی جدید در پایه هشتم</h3>
+            <ul>
+                <li><strong>استعاره:</strong> تشبیهی که یکی از دو طرف آن (مشبه یا مشبه‌به) حذف شده باشد</li>
+                <li><strong>کنایه:</strong> سخن به گونه‌ای که مقصود چیزی غیر از معنای ظاهری باشد</li>
+                <li><strong>اغراق (مبالغه):</strong> بزرگ‌نمایی بیش از حد در توصیف چیزی</li>
+                <li><strong>ایهام:</strong> آوردن کلمه‌ای که دو معنی داشته باشد و هر دو در ذهن مخاطب تداعی شود</li>
+                <li><strong>جناس:</strong> آوردن دو کلمه که در ظاهر شبیه اما در معنی متفاوت باشند</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>معنی واژه‌های «غفلت»، «تکبر» و «بصیرت» را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>غفلت:</strong> بی‌خبری، بی‌توجهی، فراموش کردن</p>
+                        <p><strong>تکبر:</strong> خودبزرگ‌بینی، خودبرتربینی، غرور</p>
+                        <p><strong>بصیرت:</strong> بینایی دل، آگاهی عمیق، قدرت تشخیص حقیقت</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>در بیت «ابر آمد و باز بر سر سبزه گریست / بی باده‌ی گلرنگ نمی‌باید زیست» آرایه‌های ادبی را مشخص کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>آرایه‌های موجود:</strong></p>
+                        <p><strong>۱. تشخیص (جان‌بخشی):</strong> «ابر گریست» - نسبت دادن گریه به ابر</p>
+                        <p><strong>۲. مراعات نظیر:</strong> ابر، سبزه، گریه (باران)</p>
+                        <p><strong>۳. تضاد:</strong> بین گریه (غم) و باده‌ی گلرنگ (شادی)</p>
+                        <p><strong>۴. استعاره:</strong> «باده‌ی گلرنگ» استعاره از شراب یا لذت زندگی</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>جمله مرکب را تعریف کنید و یک مثال بزنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تعریف:</strong> جمله مرکب از دو یا چند جمله ساده تشکیل شده که با حروف ربط (مانند «و»، «که»، «اگر»، «چون» و...) به هم متصل می‌شوند. در جمله مرکب حداقل دو فعل وجود دارد.</p>
+                        <p><strong>مثال:</strong> «هوا سرد بود و برف می‌بارید.»</p>
+                        <p>• جمله اول: هوا سرد بود</p>
+                        <p>• جمله دوم: برف می‌بارید</p>
+                        <p>• حرف ربط: و</p>
+                        <p><strong>مثال دیگر:</strong> «وقتی به خانه رسیدم، مادرم غذا پخته بود.»</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>شاعران بزرگ قرن هفتم و هشتم هجری را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>قرن هفتم هجری:</strong></p>
+                        <ul>
+                            <li><strong>سعدی:</strong> شاعر بزرگ شیرازی، نویسنده گلستان و بوستان</li>
+                            <li><strong>مولوی (مولانا):</strong> عارف و شاعر بزرگ، نویسنده مثنوی معنوی</li>
+                            <li><strong>عطار نیشابوری:</strong> عارف و شاعر، نویسنده منطق الطیر</li>
+                        </ul>
+                        <p><strong>قرن هشتم هجری:</strong></p>
+                        <ul>
+                            <li><strong>حافظ شیرازی:</strong> لسان‌الغیب، شاعر غزل‌سرای بزرگ ایرانی</li>
+                            <li><strong>خواجوی کرمانی:</strong> شاعر قصیده‌سرا</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ریاضی هشتم -->
+    <div id="g8-math" class="subject-content">
+        <div class="card">
+            <h2>🔢 درس ریاضی پایه هشتم</h2>
+            <p>ریاضی پایه هشتم شامل ۹ فصل است که مفاهیم جبری، هندسی و آماری را گسترش می‌دهد.</p>
+
+            <h3>مفاهیم کلیدی</h3>
+            <ul>
+                <li><strong>اعداد گویا:</strong> اعدادی که به صورت کسر a/b (با b≠0) نوشته می‌شوند</li>
+                <li><strong>عبارت‌های جبری:</strong> ترکیبی از اعداد، متغیرها و عملگرها</li>
+                <li><strong>اتحادهای جبری:</strong> تساوی‌هایی که برای همه مقادیر متغیرها برقرارند</li>
+                <li><strong>هندسه تحلیلی:</strong> بررسی شکل‌های هندسی با استفاده از مختصات</li>
+                <li><strong>قضیه فیثاغورس:</strong> در مثلث قائم‌الزاویه، a² + b² = c²</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>حاصل عبارت (2/3) + (1/4) را به دست آورید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>راه‌حل:</strong></p>
+                        <p>مرحله ۱: مخرج مشترک را پیدا می‌کنیم (ک.م.م 3 و 4 = 12)</p>
+                        <p>مرحله ۲: کسرها را هم‌مخرج می‌کنیم:</p>
+                        <p>2/3 = 8/12</p>
+                        <p>1/4 = 3/12</p>
+                        <p>مرحله ۳: صورت‌ها را جمع می‌کنیم:</p>
+                        <p>8/12 + 3/12 = <strong>11/12</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>اتحاد مربع دو جمله‌ای (a + b)² را بنویسید و اثبات کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فرمول:</strong> (a + b)² = a² + 2ab + b²</p>
+                        <p><strong>اثبات:</strong></p>
+                        <p>(a + b)² = (a + b)(a + b)</p>
+                        <p>= a(a + b) + b(a + b)</p>
+                        <p>= a² + ab + ba + b²</p>
+                        <p>= a² + 2ab + b²</p>
+                        <p><strong>مثال:</strong> (x + 3)² = x² + 6x + 9</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>در یک مثلث قائم‌الزاویه، اندازه دو ضلع زاویه قائمه 6 و 8 سانتی‌متر است. طول وتر را حساب کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>طبق قضیه فیثاغورس:</strong> a² + b² = c²</p>
+                        <p>که c طول وتر و a و b طول دو ضلع زاویه قائمه هستند.</p>
+                        <p>c² = 6² + 8²</p>
+                        <p>c² = 36 + 64</p>
+                        <p>c² = 100</p>
+                        <p>c = √100 = <strong>10 سانتی‌متر</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>معادله درجه دوم x² - 5x + 6 = 0 را حل کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>راه‌حل با تجزیه:</strong></p>
+                        <p>دو عدد پیدا می‌کنیم که حاصل‌ضرب آن‌ها 6 و حاصل‌جمع آن‌ها 5- باشد.</p>
+                        <p>این دو عدد -2 و -3 هستند.</p>
+                        <p>x² - 5x + 6 = (x - 2)(x - 3) = 0</p>
+                        <p>پس: x - 2 = 0 یا x - 3 = 0</p>
+                        <p><strong>x = 2 یا x = 3</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- علوم هشتم -->
+    <div id="g8-science" class="subject-content">
+        <div class="card">
+            <h2>🔬 درس علوم تجربی پایه هشتم</h2>
+            <p>علوم پایه هشتم شامل ۱۵ فصل در زمینه‌های شیمی، فیزیک، زیست‌شناسی و زمین‌شناسی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>عنصر و ترکیب را تعریف کنید و تفاوت آن‌ها را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>عنصر:</strong> ماده‌ای خالص است که تنها از یک نوع اتم تشکیل شده و با روش‌های شیمیایی معمولی به مواد ساده‌تر تجزیه نمی‌شود. مثال: اکسیژن (O)، طلا (Au)، آهن (Fe)</p>
+                        <p><strong>ترکیب:</strong> ماده‌ای خالص است که از دو یا چند عنصر مختلف تشکیل شده که با نسبت ثابتی با هم ترکیب شده‌اند. مثال: آب (H₂O)، نمک طعام (NaCl)، کربن دی‌اکسید (CO₂)</p>
+                        <p><strong>تفاوت‌ها:</strong></p>
+                        <ul>
+                            <li>عنصر از یک نوع اتم تشکیل شده، ترکیب از چند نوع اتم</li>
+                            <li>عنصر تجزیه‌ناپذیر است، ترکیب قابل تجزیه به عناصر سازنده است</li>
+                            <li>خواص ترکیب با خواص عناصر سازنده‌اش متفاوت است</li>
+                            <li>در ترکیب، عناصر با نسبت ثابت ترکیب می‌شوند</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>قانون دوم نیوتون را بیان کنید و فرمول آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>قانون دوم نیوتون:</strong> شتاب یک جسم با نیروی خالص وارد بر آن رابطه مستقیم و با جرم آن رابطه عکس دارد.</p>
+                        <p><strong>فرمول:</strong> F = m × a</p>
+                        <p>• F = نیرو (برحسب نیوتن N)</p>
+                        <p>• m = جرم (برحسب کیلوگرم kg)</p>
+                        <p>• a = شتاب (برحسب متر بر مجذور ثانیه m/s²)</p>
+                        <p><strong>مثال:</strong> اگر نیروی 100 نیوتن بر جسمی به جرم 20 کیلوگرم وارد شود، شتاب آن:</p>
+                        <p>a = F/m = 100/20 = 5 m/s²</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>دستگاه گردش خون انسان را توضیح دهید و اجزای اصلی آن را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>وظیفه:</strong> انتقال اکسیژن، مواد غذایی و هورمون‌ها به سلول‌ها و دفع مواد زائد از سلول‌ها</p>
+                        <p><strong>اجزای اصلی:</strong></p>
+                        <p><strong>۱. قلب:</strong> پمپ عضلانی که خون را به گردش درمی‌آورد</p>
+                        <p><strong>۲. رگ‌های خونی:</strong></p>
+                        <ul>
+                            <li><strong>سرخرگ‌ها:</strong> خون را از قلب به اندام‌ها می‌برند (دیواره ضخیم)</li>
+                            <li><strong>سیاهرگ‌ها:</strong> خون را از اندام‌ها به قلب برمی‌گردانند (دارای دریچه)</li>
+                            <li><strong>مویرگ‌ها:</strong> رگ‌های بسیار نازک که تبادل مواد انجام می‌دهند</li>
+                        </ul>
+                        <p><strong>۳. خون:</strong> شامل گلبول‌های قرمز (حمل اکسیژن)، گلبول‌های سفید (دفاع بدن)، پلاکت‌ها (انعقاد خون) و پلاسما</p>
+                        <p><strong>انواع گردش خون:</strong></p>
+                        <ul>
+                            <li><strong>گردش کوچک (ریوی):</strong> قلب → ریه‌ها → قلب (برای دریافت اکسیژن)</li>
+                            <li><strong>گردش بزرگ (عمومی):</strong> قلب → اندام‌ها → قلب (برای تأمین اکسیژن سلول‌ها)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>انواع آینه‌ها را نام برده و ویژگی‌های تصویر در هر کدام را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>۱. آینه تخت (صاف):</strong></p>
+                        <ul>
+                            <li>تصویر مجازی، مستقیم و هم‌اندازه با جسم</li>
+                            <li>فاصله تصویر تا آینه برابر فاصله جسم تا آینه است</li>
+                            <li>چپ و راست تصویر معکوس است</li>
+                        </ul>
+                        <p><strong>۲. آینه کروی مقعر (کاو):</strong></p>
+                        <ul>
+                            <li>اگر جسم دور از کانون باشد: تصویر حقیقی، وارونه و کوچک‌تر</li>
+                            <li>اگر جسم نزدیک و بین کانون و آینه باشد: تصویر مجازی، مستقیم و بزرگ‌تر</li>
+                            <li>کاربرد: آینه دندانپزشکی، تلسکوپ بازتابی</li>
+                        </ul>
+                        <p><strong>۳. آینه کروی محدب (کوژ):</strong></p>
+                        <ul>
+                            <li>همواره تصویر مجازی، مستقیم و کوچک‌تر از جسم</li>
+                            <li>میدان دید وسیع</li>
+                            <li>کاربرد: آینه بغل خودرو، آینه‌های ترافیکی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اجتماعی هشتم -->
+    <div id="g8-social" class="subject-content">
+        <div class="card">
+            <h2>🌍 درس مطالعات اجتماعی پایه هشتم</h2>
+            <p>مطالعات اجتماعی هشتم شامل ۲۴ درس در بخش‌های تاریخ، جغرافیا و مدنی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>انقلاب اسلامی ایران در چه سالی و به رهبری چه کسی پیروز شد؟ دلایل اصلی آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>سال پیروزی:</strong> ۲۲ بهمن ۱۳۵۷ (11 فوریه 1979)</p>
+                        <p><strong>رهبر انقلاب:</strong> امام خمینی (ره)</p>
+                        <p><strong>دلایل اصلی انقلاب:</strong></p>
+                        <ul>
+                            <li><strong>استبداد داخلی:</strong> فقدان آزادی‌های سیاسی و سرکوب مخالفان</li>
+                            <li><strong>وابستگی به بیگانگان:</strong> نفوذ آمریکا و انگلیس در امور داخلی ایران</li>
+                            <li><strong>فساد اقتصادی:</strong> توزیع ناعادلانه ثروت و شکاف طبقاتی</li>
+                            <li><strong>تضادهای فرهنگی:</strong> تحمیل فرهنگ غربی و نادیده گرفتن ارزش‌های اسلامی</li>
+                            <li><strong>ظلم به روحانیت و مردم مذهبی:</strong> محدود کردن فعالیت‌های دینی</li>
+                            <li><strong>کشتار ۱۷ شهریور ۱۳۵۷:</strong> شهادت تعداد زیادی از معترضان</li>
+                            <li><strong>رهبری امام خمینی:</strong> وحدت بخشیدن به اقشار مختلف مردم</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>موقعیت جغرافیایی ایران را توصیف کنید و همسایگان ایران را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>موقعیت جغرافیایی:</strong></p>
+                        <p>ایران در جنوب غربی آسیا و خاورمیانه قرار دارد. این کشور از شمال به دریای خزر (بزرگ‌ترین دریاچه جهان)، از جنوب به خلیج فارس و دریای عمان، از شرق به افغانستان و پاکستان و از غرب به عراق و ترکیه محدود است.</p>
+                        <p><strong>مختصات جغرافیایی:</strong> بین مدارهای ۲۵ تا ۴۰ درجه شمالی و نصف‌النهارهای ۴۴ تا ۶۳ درجه شرقی</p>
+                        <p><strong>وسعت:</strong> ۱,۶۴۸,۱۹۵ کیلومتر مربع (هفدهمین کشور پهناور جهان)</p>
+                        <p><strong>همسایگان (۱۵ کشور):</strong></p>
+                        <ul>
+                            <li><strong>شمال:</strong> جمهوری آذربایجان، ارمنستان، ترکمنستان</li>
+                            <li><strong>شمال غربی:</strong> ترکیه</li>
+                            <li><strong>غرب:</strong> عراق</li>
+                            <li><strong>شرق:</strong> افغانستان، پاکستان</li>
+                            <li><strong>همسایگان دریایی:</strong> کویت، بحرین، قطر، امارات، عربستان، عمان، روسیه، قزاقستان</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- عربی هشتم -->
+    <div id="g8-arabic" class="subject-content">
+        <div class="card">
+            <h2>🕌 درس عربی پایه هشتم</h2>
+            <p>عربی پایه هشتم شامل ۱۰ درس با تمرکز بر افعال ماضی، مضارع و قواعد پیشرفته‌تر است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>فعل ماضی «کَتَبَ» را برای تمام ضمایر صرف کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>صرف فعل «کَتَبَ» (نوشت) در زمان گذشته:</strong></p>
+                        <p>• هو (او - مذکر): <strong>کَتَبَ</strong></p>
+                        <p>• هما (آن دو - مذکر): <strong>کَتَبا</strong></p>
+                        <p>• هم (آن‌ها - مذکر): <strong>کَتَبوا</strong></p>
+                        <p>• هی (او - مؤنث): <strong>کَتَبَت</strong></p>
+                        <p>• هما (آن دو - مؤنث): <strong>کَتَبَتا</strong></p>
+                        <p>• هن (آن‌ها - مؤنث): <strong>کَتَبنَ</strong></p>
+                        <p>• أنتَ (تو - مذکر): <strong>کَتَبتَ</strong></p>
+                        <p>• أنتِ (تو - مؤنث): <strong>کَتَبتِ</strong></p>
+                        <p>• أنتما (شما دو نفر): <strong>کَتَبتُما</strong></p>
+                        <p>• أنتم (شما - مذکر): <strong>کَتَبتُم</strong></p>
+                        <p>• أنتن (شما - مؤنث): <strong>کَتَبتُنَّ</strong></p>
+                        <p>• أنا (من): <strong>کَتَبتُ</strong></p>
+                        <p>• نحن (ما): <strong>کَتَبنا</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>جمله «ذَهَبَ الطالِبُ إلی المَدرَسَةِ» را ترجمه و تجزیه کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>ترجمه:</strong> دانش‌آموز به مدرسه رفت.</p>
+                        <p><strong>تجزیه و ترکیب:</strong></p>
+                        <p>• <strong>ذَهَبَ:</strong> فعل ماضی، صیغه مفرد مذکر غایب (او رفت)</p>
+                        <p>• <strong>الطالِبُ:</strong> فاعل (کننده کار)، مرفوع با ضمه</p>
+                        <p>• <strong>إلی:</strong> حرف جر (به سوی)</p>
+                        <p>• <strong>المَدرَسَةِ:</strong> اسم مجرور با کسره</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- هدیه هشتم -->
+    <div id="g8-religious" class="subject-content">
+        <div class="card">
+            <h2>📖 درس هدیه‌های آسمانی پایه هشتم</h2>
+            <p>هدیه‌های آسمانی هشتم شامل ۱۷ درس در زمینه‌های اعتقادی، اخلاقی و احکام اسلامی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>تقیه را تعریف کنید و موارد جایز بودن آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تعریف تقیه:</strong> پنهان کردن عقیده دینی در شرایطی که اظهار آن باعث خطر جانی، مالی یا آبرویی برای فرد یا دیگر مسلمانان شود.</p>
+                        <p><strong>موارد جایز بودن تقیه:</strong></p>
+                        <ul>
+                            <li>وقتی خطر جانی برای خود یا دیگران وجود داشته باشد</li>
+                            <li>وقتی احتمال ضرر مالی قابل توجه وجود دارد</li>
+                            <li>وقتی خطر از دست رفتن آبرو یا موقعیت اجتماعی هست</li>
+                            <li>فقط در امور فروع دین جایز است، نه در اصول دین</li>
+                            <li>زمانی که خطر برطرف شود، تقیه نیز منتفی می‌شود</li>
+                        </ul>
+                        <p><strong>نکته:</strong> تقیه برای حفظ جان است نه برای فریب و دروغ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>اعمال شب قدر را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>اعمال مشترک شب‌های قدر:</strong></p>
+                        <ul>
+                            <li>غسل کردن</li>
+                            <li>احیا (شب‌زنده‌داری) و عبادت</li>
+                            <li>خواندن قرآن به ویژه سوره‌های عنکبوت و روم</li>
+                            <li>خواندن دعای جوشن کبیر</li>
+                            <li>زیارت امام حسین (ع)</li>
+                            <li>استغفار و توبه</li>
+                            <li>خواندن ۱۰۰ رکعت نماز</li>
+                            <li>باز کردن قرآن و فال گرفتن (استخاره)</li>
+                        </ul>
+                        <p><strong>اعمال ویژه شب ۲۳ ماه رمضان:</strong></p>
+                        <ul>
+                            <li>خواندن دعای ابوحمزه ثمالی</li>
+                            <li>خواندن سوره‌های عنکبوت، روم، دخان و قدر</li>
+                            <li>خواندن دعای «اللهم اجعل فیما تقضی و تقدر...»</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== پایه نهم ============== -->
+<section id="grade9" class="section">
+    <div class="card">
+        <h2>🔴 مطالب آموزشی پایه نهم</h2>
+        <p>در این بخش، تمام دروس پایه نهم شامل سوالات امتحانی، پاسخ‌های تشریحی و نکات کلیدی هر درس ارائه شده است.</p>
+        
+        <div class="subject-buttons">
+            <button class="subject-btn active" data-subject="g9-persian">📚 فارسی</button>
+            <button class="subject-btn" data-subject="g9-math">🔢 ریاضی</button>
+            <button class="subject-btn" data-subject="g9-science">🔬 علوم تجربی</button>
+            <button class="subject-btn" data-subject="g9-social">🌍 مطالعات اجتماعی</button>
+            <button class="subject-btn" data-subject="g9-arabic">🕌 عربی</button>
+            <button class="subject-btn" data-subject="g9-religious">📖 هدیه‌های آسمانی</button>
+        </div>
+    </div>
+
+    <!-- فارسی نهم -->
+    <div id="g9-persian" class="subject-content active">
+        <div class="card">
+            <h2>📚 درس فارسی پایه نهم</h2>
+            <p>فارسی پایه نهم آخرین پایه دوره اول متوسطه است و شامل ۱۷ درس با متون ادبی پیچیده‌تر و قواعد پیشرفته‌تر است.</p>
+
+            <h3>مفاهیم کلیدی</h3>
+            <ul>
+                <li><strong>انواع نثر:</strong> نثر ساده، نثر مرسل، نثر فنی (متکلف)</li>
+                <li><strong>انواع شعر:</strong> قصیده، غزل، مثنوی، رباعی، قطعه، چهارپاره، شعر نو</li>
+                <li><strong>وزن عروضی:</strong> بررسی وزن شعر بر اساس هجاهای کوتاه و بلند</li>
+                <li><strong>قافیه و ردیف:</strong> بررسی ساختار پایان ابیات</li>
+                <li><strong>تاریخ ادبیات:</strong> آشنایی با شاعران و نویسندگان مهم ایرانی</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>تفاوت غزل و قصیده را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تفاوت‌های اصلی غزل و قصیده:</strong></p>
+                        <p><strong>۱. موضوع:</strong></p>
+                        <ul>
+                            <li><strong>غزل:</strong> بیشتر درباره عشق، عرفان، احساسات و عواطف</li>
+                            <li><strong>قصیده:</strong> بیشتر درباره مدح، وصف طبیعت، حکمت، فلسفه و مسائل اجتماعی</li>
+                        </ul>
+                        <p><strong>۲. تعداد ابیات:</strong></p>
+                        <ul>
+                            <li><strong>غزل:</strong> معمولاً بین ۵ تا ۱۲ بیت (کوتاه‌تر)</li>
+                            <li><strong>قصیده:</strong> معمولاً بیش از ۱۵ بیت و گاهی تا ۱۰۰ بیت (بلندتر)</li>
+                        </ul>
+                        <p><strong>۳. لحن و سبک:</strong></p>
+                        <ul>
+                            <li><strong>غزل:</strong> لحن صمیمی، احساسی و عاشقانه</li>
+                            <li><strong>قصیده:</strong> لحن رسمی، جدی و فاخر</li>
+                        </ul>
+                        <p><strong>۴. شاعران معروف:</strong></p>
+                        <ul>
+                            <li><strong>غزل:</strong> حافظ، سعدی، مولانا</li>
+                            <li><strong>قصیده:</strong> ناصرخسرو، منوچهری، فرخی سیستانی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>شعر نو را تعریف کنید و چند شاعر معروف آن را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تعریف شعر نو:</strong> نوعی از شعر فارسی است که در قرن چهاردهم هجری شمسی پدید آمد و از قیود وزن عروضی سنتی، قافیه اجباری و تعداد مشخص ابیات رها شد. در شعر نو، محتوا و احساس بر فرم و قالب تقدم دارد.</p>
+                        <p><strong>ویژگی‌های شعر نو:</strong></p>
+                        <ul>
+                            <li>وزن عروضی ثابت ندارد (یا وزن متغیر دارد)</li>
+                            <li>قافیه اجباری نیست</li>
+                            <li>تعداد ابیات مشخص نیست</li>
+                            <li>زبان ساده‌تر و امروزی‌تر است</li>
+                            <li>موضوعات اجتماعی و انسانی پررنگ‌تر است</li>
+                            <li>تصویرسازی‌های مدرن و نوآورانه</li>
+                        </ul>
+                        <p><strong>شاعران معروف:</strong></p>
+                        <ul>
+                            <li><strong>نیما یوشیج:</strong> پدر شعر نو فارسی</li>
+                            <li><strong>احمد شاملو:</strong> شاعر سپیدسرایی</li>
+                            <li><strong>فروغ فرخزاد:</strong> شاعر زن معاصر</li>
+                            <li><strong>مهدی اخوان ثالث:</strong> شاعر نیمایی</li>
+                            <li><strong>سهراب سپهری:</strong> شاعر طبیعت‌گرا و عارف</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>نقش دستوری کلمات در جمله «معلم دلسوز، دانش‌آموزان کوشا را با مهربانی راهنمایی کرد» را مشخص کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تجزیه و ترکیب:</strong></p>
+                        <p>• <strong>معلم:</strong> نهاد (فاعل)</p>
+                        <p>• <strong>دلسوز:</strong> صفت برای «معلم»</p>
+                        <p>• <strong>دانش‌آموزان:</strong> مفعول</p>
+                        <p>• <strong>کوشا:</strong> صفت برای «دانش‌آموزان»</p>
+                        <p>• <strong>را:</strong> نشانه مفعول</p>
+                        <p>• <strong>با مهربانی:</strong> قید حالت (متموم با حرف اضافه)</p>
+                        <p>• <strong>راهنمایی کرد:</strong> فعل جمله</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ریاضی نهم -->
+    <div id="g9-math" class="subject-content">
+        <div class="card">
+            <h2>🔢 درس ریاضی پایه نهم</h2>
+            <p>ریاضی پایه نهم شامل ۸ فصل است و مباحث پیشرفته‌تری از جبر، هندسه و احتمال را پوشش می‌دهد.</p>
+
+            <h3>مفاهیم کلیدی</h3>
+            <ul>
+                <li><strong>مجموعه‌ها:</strong> مجموعه‌های اعداد، اعمال مجموعه‌ای (اجتماع، اشتراک، تفاضل)</li>
+                <li><strong>اعداد حقیقی:</strong> اعداد گویا و گنگ، رادیکال‌ها</li>
+                <li><strong>استدلال و اثبات:</strong> روش‌های اثبات در هندسه</li>
+                <li><strong>توان و ریشه:</strong> قوانین توان، ریشه‌گیری</li>
+                <li><strong>عبارت‌های جبری:</strong> چندجمله‌ای‌ها، تجزیه</li>
+                <li><strong>خط و معادلات خط:</strong> شیب، عرض از مبدأ</li>
+                <li><strong>عبارت‌های گویا:</strong> کسرهای جبری</li>
+                <li><strong>حجم و مساحت:</strong> اشکال فضایی</li>
+            </ul>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>حاصل عبارت √50 + √18 را ساده کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>راه‌حل:</strong></p>
+                        <p>مرحله ۱: هر رادیکال را به صورت حاصل‌ضرب تجزیه می‌کنیم:</p>
+                        <p>√50 = √(25 × 2) = √25 × √2 = 5√2</p>
+                        <p>√18 = √(9 × 2) = √9 × √2 = 3√2</p>
+                        <p>مرحله ۲: حالا دو عبارت را جمع می‌کنیم:</p>
+                        <p>5√2 + 3√2 = (5 + 3)√2 = <strong>8√2</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>معادله خطی که از دو نقطه A(1, 3) و B(3, 7) می‌گذرد را بیابید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فرمول کلی معادله خط:</strong> y = mx + b</p>
+                        <p>مرحله ۱: شیب خط (m) را محاسبه می‌کنیم:</p>
+                        <p>m = (y₂ - y₁) / (x₂ - x₁) = (7 - 3) / (3 - 1) = 4 / 2 = 2</p>
+                        <p>مرحله ۲: یکی از نقاط را در معادله قرار می‌دهیم (مثلاً A):</p>
+                        <p>3 = 2(1) + b</p>
+                        <p>3 = 2 + b</p>
+                        <p>b = 1</p>
+                        <p>مرحله ۳: معادله نهایی:</p>
+                        <p><strong>y = 2x + 1</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>عبارت x² - 9 را تجزیه کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>این عبارت از نوع «تفاضل دو مربع» است.</strong></p>
+                        <p><strong>فرمول کلی:</strong> a² - b² = (a - b)(a + b)</p>
+                        <p>در اینجا:</p>
+                        <p>x² - 9 = x² - 3²</p>
+                        <p>= (x - 3)(x + 3)</p>
+                        <p><strong>پاسخ: (x - 3)(x + 3)</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>حجم یک استوانه به شعاع قاعده 5 سانتی‌متر و ارتفاع 12 سانتی‌متر را حساب کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>فرمول حجم استوانه:</strong> V = πr²h</p>
+                        <p>r = 5 سانتی‌متر</p>
+                        <p>h = 12 سانتی‌متر</p>
+                        <p>V = π × 5² × 12</p>
+                        <p>V = π × 25 × 12</p>
+                        <p>V = 300π</p>
+                        <p>V ≈ 300 × 3.14 = <strong>942 سانتی‌متر مکعب</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- علوم نهم -->
+    <div id="g9-science" class="subject-content">
+        <div class="card">
+            <h2>🔬 درس علوم تجربی پایه نهم</h2>
+            <p>علوم پایه نهم شامل ۱۵ فصل در زمینه‌های شیمی، فیزیک، زیست‌شناسی و زمین‌شناسی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>پیوندهای یونی و کووالانسی را تعریف کنید و تفاوت آن‌ها را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>پیوند یونی:</strong> پیوندی است که در آن یک اتم الکترون از دست می‌دهد (به کاتیون تبدیل می‌شود) و اتم دیگر الکترون می‌گیرد (به آنیون تبدیل می‌شود). این دو یون با بار مخالف یکدیگر را جذب می‌کنند. مثال: NaCl (نمک طعام)</p>
+                        <p><strong>پیوند کووالانسی:</strong> پیوندی است که در آن دو اتم غیرفلزی الکترون‌ها را با هم به اشتراک می‌گذارند. مثال: H₂O (آب)، CO₂ (کربن دی‌اکسید)</p>
+                        <p><strong>تفاوت‌های اصلی:</strong></p>
+                        <ul>
+                            <li>در پیوند یونی الکترون منتقل می‌شود، در کووالانسی به اشتراک گذاشته می‌شود</li>
+                            <li>پیوند یونی بین فلز و غیرفلز است، کووالانسی بین دو غیرفلز</li>
+                            <li>ترکیبات یونی نقطه ذوب و جوش بالایی دارند، کووالانسی معمولاً پایین‌تر</li>
+                            <li>ترکیبات یونی در حالت محلول یا مذاب رسانای الکتریسیته هستند</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>قانون اهم را بیان کنید و فرمول آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>قانون اهم:</strong> شدت جریان الکتریکی (I) عبور کننده از یک رسانا با اختلاف پتانسیل دو سر آن (V) رابطه مستقیم و با مقاومت الکتریکی رسانا (R) رابطه عکس دارد.</p>
+                        <p><strong>فرمول:</strong> V = I × R</p>
+                        <p>که در آن:</p>
+                        <ul>
+                            <li><strong>V:</strong> اختلاف پتانسیل (ولتاژ) بر حسب ولت (V)</li>
+                            <li><strong>I:</strong> شدت جریان بر حسب آمپر (A)</li>
+                            <li><strong>R:</strong> مقاومت الکتریکی بر حسب اهم (Ω)</li>
+                        </ul>
+                        <p><strong>مثال:</strong> اگر ولتاژ دو سر مقاومتی 12 ولت و جریان عبوری 2 آمپر باشد، مقاومت آن:</p>
+                        <p>R = V/I = 12/2 = 6 اهم</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>DNA چیست و چه وظیفه‌ای در سلول دارد؟</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>DNA (اسید دئوکسی‌ریبونوکلئیک):</strong> مولکول بزرگی است که در هسته سلول‌های یوکاریوتی قرار دارد و اطلاعات ژنتیکی موجود زنده را حمل می‌کند.</p>
+                        <p><strong>ساختار:</strong></p>
+                        <ul>
+                            <li>از دو رشته موازی تشکیل شده که مانند نردبان مارپیچ دور هم پیچیده‌اند (مارپیچ دوگانه)</li>
+                            <li>واحد سازنده آن نوکلئوتید است (شامل قند، فسفات و یک باز آلی)</li>
+                            <li>چهار باز آلی دارد: آدنین (A)، تیمین (T)، گوانین (G)، سیتوزین (C)</li>
+                            <li>A همیشه با T و G همیشه با C جفت می‌شود</li>
+                        </ul>
+                        <p><strong>وظایف DNA:</strong></p>
+                        <ul>
+                            <li>ذخیره اطلاعات ژنتیکی و ویژگی‌های ارثی</li>
+                            <li>انتقال صفات از والدین به فرزندان</li>
+                            <li>کنترل فعالیت‌های سلول از طریق ساخت پروتئین</li>
+                            <li>همانندسازی برای تقسیم سلولی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۴</span><span>تفاوت حرکت وضعی و انتقالی زمین را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>حرکت وضعی (چرخشی):</strong></p>
+                        <ul>
+                            <li>چرخش زمین به دور خودش (محور فرضی)</li>
+                            <li>مدت زمان: ۲۴ ساعت (یک شبانه‌روز)</li>
+                            <li>جهت چرخش: از غرب به شرق</li>
+                            <li>نتیجه: پیدایش شب و روز</li>
+                            <li>سرعت چرخش در استوا: حدود ۱۶۷۰ کیلومتر بر ساعت</li>
+                        </ul>
+                        <p><strong>حرکت انتقالی (مداری):</strong></p>
+                        <ul>
+                            <li>چرخش زمین به دور خورشید در مداری بیضی‌شکل</li>
+                            <li>مدت زمان: ۳۶۵ روز و ۶ ساعت (یک سال)</li>
+                            <li>جهت حرکت: خلاف عقربه‌های ساعت</li>
+                            <li>نتیجه: پیدایش فصل‌های سال (به همراه مایل بودن محور زمین)</li>
+                            <li>سرعت حرکت: حدود ۳۰ کیلومتر بر ثانیه</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اجتماعی نهم -->
+    <div id="g9-social" class="subject-content">
+        <div class="card">
+            <h2>🌍 درس مطالعات اجتماعی پایه نهم</h2>
+            <p>مطالعات اجتماعی نهم شامل ۲۴ درس در بخش‌های تاریخ، جغرافیا و مدنی است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>جنگ جهانی دوم را از نظر زمان، علل و نتایج توضیح دهید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>زمان:</strong> ۱۹۳۹ تا ۱۹۴۵ میلادی (۶ سال)</p>
+                        <p><strong>علل اصلی جنگ:</strong></p>
+                        <ul>
+                            <li>پیامدهای جنگ جهانی اول و تحقیر آلمان در معاهده ورسای</li>
+                            <li>ظهور رژیم‌های فاشیستی در آلمان (هیتلر) و ایتالیا (موسولینی)</li>
+                            <li>سیاست توسعه‌طلبی آلمان نازی و اشغال کشورهای اروپایی</li>
+                            <li>بحران اقتصادی جهانی ۱۹۲۹</li>
+                            <li>ضعف جامعه ملل در جلوگیری از تهاجمات</li>
+                            <li>حمله آلمان به لهستان در ۱ سپتامبر ۱۹۳۹ (عامل آغاز جنگ)</li>
+                        </ul>
+                        <p><strong>طرف‌های جنگ:</strong></p>
+                        <ul>
+                            <li><strong>متفقین:</strong> انگلستان، شوروی، آمریکا، فرانسه، چین</li>
+                            <li><strong>محور:</strong> آلمان، ایتالیا، ژاپن</li>
+                        </ul>
+                        <p><strong>نتایج جنگ:</strong></p>
+                        <ul>
+                            <li>شکست آلمان، ایتالیا و ژاپن</li>
+                            <li>کشته شدن حدود ۶۰ میلیون نفر</li>
+                            <li>استفاده از بمب اتمی در هیروشیما و ناکازاکی</li>
+                            <li>تأسیس سازمان ملل متحد (۱۹۴۵)</li>
+                            <li>آغاز جنگ سرد بین آمریکا و شوروی</li>
+                            <li>تقسیم آلمان به دو قسمت شرقی و غربی</li>
+                            <li>تأسیس رژیم اسرائیل در فلسطین (۱۹۴۸)</li>
+                            <li>آغاز جنبش‌های استقلال‌طلبانه در مستعمرات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>سازمان ملل متحد را معرفی کنید و ارکان اصلی آن را نام ببرید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>معرفی:</strong> سازمان ملل متحد یک سازمان بین‌المللی است که پس از جنگ جهانی دوم در ۲۴ اکتبر ۱۹۴۵ با هدف حفظ صلح و امنیت جهانی، توسعه روابط دوستانه بین کشورها و همکاری در حل مسائل بین‌المللی تأسیس شد. مقر اصلی آن در نیویورک است.</p>
+                        <p><strong>اهداف اصلی:</strong></p>
+                        <ul>
+                            <li>حفظ صلح و امنیت بین‌المللی</li>
+                            <li>توسعه روابط دوستانه میان ملل</li>
+                            <li>همکاری بین‌المللی در حل مسائل اقتصادی، اجتماعی و فرهنگی</li>
+                            <li>ترویج حقوق بشر و آزادی‌های اساسی</li>
+                        </ul>
+                        <p><strong>ارکان اصلی (۶ رکن):</strong></p>
+                        <ol>
+                            <li><strong>مجمع عمومی:</strong> شامل نمایندگان تمام کشورهای عضو (هر کشور یک رأی)</li>
+                            <li><strong>شورای امنیت:</strong> مسئول حفظ صلح (۵ عضو دائم + ۱۰ عضو غیردائم)</li>
+                            <li><strong>شورای اقتصادی و اجتماعی:</strong> رسیدگی به مسائل اقتصادی و اجتماعی</li>
+                            <li><strong>دیوان بین‌المللی دادگستری:</strong> رسیدگی به اختلافات حقوقی بین کشورها (در لاهه)</li>
+                            <li><strong>دبیرخانه:</strong> امور اجرایی سازمان به ریاست دبیر کل</li>
+                            <li><strong>شورای قیمومت:</strong> (فعالیت آن متوقف شده) نظارت بر سرزمین‌های تحت قیمومت</li>
+                        </ol>
+                        <p><strong>اعضای دائم شورای امنیت با حق وتو:</strong> آمریکا، روسیه، چین، انگلستان، فرانسه</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۳</span><span>مشروطه چیست و انقلاب مشروطه در ایران چه زمانی و با چه اهدافی انجام شد؟</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>تعریف مشروطه:</strong> نوعی از نظام حکومتی است که در آن قدرت پادشاه یا رئیس کشور محدود به قانون اساسی و مجلس نمایندگان مردم می‌شود. در این نظام، قوانین توسط نمایندگان منتخب مردم تصویب می‌شود و پادشاه تنها مجری این قوانین است.</p>
+                        <p><strong>زمان انقلاب مشروطه ایران:</strong> ۱۲۸۵ هجری شمسی (۱۹۰۶ میلادی)</p>
+                        <p><strong>اهداف اصلی انقلاب:</strong></p>
+                        <ul>
+                            <li>ایجاد مجلس شورای ملی برای تصویب قوانین</li>
+                            <li>تدوین قانون اساسی برای محدود کردن قدرت شاه</li>
+                            <li>جلوگیری از استبداد داخلی و ظلم به مردم</li>
+                            <li>مقابله با نفوذ بیگانگان (انگلیس و روسیه)</li>
+                            <li>ایجاد دادگستری مستقل و عادلانه</li>
+                            <li>اصلاحات اقتصادی و کاهش فساد</li>
+                            <li>تضمین حقوق و آزادی‌های مردم</li>
+                        </ul>
+                        <p><strong>رهبران جنبش:</strong> روحانیون (آیت‌الله طباطبایی، آیت‌الله بهبهانی)، روشنفکران، بازرگانان و مردم عادی</p>
+                        <p><strong>نتایج:</strong></p>
+                        <ul>
+                            <li>صدور فرمان مشروطه توسط مظفرالدین شاه (۱۴ مرداد ۱۲۸۵)</li>
+                            <li>تشکیل اولین مجلس شورای ملی</li>
+                            <li>تدوین اولین قانون اساسی ایران</li>
+                            <li>هرچند بعدها با استبداد محمدعلی شاه و دخالت بیگانگان، مشروطه به انحراف کشیده شد</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- عربی نهم -->
+    <div id="g9-arabic" class="subject-content">
+        <div class="card">
+            <h2>🕌 درس عربی پایه نهم</h2>
+            <p>عربی پایه نهم شامل ۸ درس با تمرکز بر افعال مضارع، امر و قواعد پیشرفته است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>فعل مضارع «یَکتُبُ» را برای تمام ضمایر صرف کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>صرف فعل «یَکتُبُ» (می‌نویسد) در زمان حال:</strong></p>
+                        <p>• هو (او - مذکر): <strong>یَکتُبُ</strong></p>
+                        <p>• هما (آن دو - مذکر): <strong>یَکتُبانِ</strong></p>
+                        <p>• هم (آن‌ها - مذکر): <strong>یَکتُبونَ</strong></p>
+                        <p>• هی (او - مؤنث): <strong>تَکتُبُ</strong></p>
+                        <p>• هما (آن دو - مؤنث): <strong>تَکتُبانِ</strong></p>
+                        <p>• هن (آن‌ها - مؤنث): <strong>یَکتُبنَ</strong></p>
+                        <p>• أنتَ (تو - مذکر): <strong>تَکتُبُ</strong></p>
+                        <p>• أنتِ (تو - مؤنث): <strong>تَکتُبینَ</strong></p>
+                        <p>• أنتما (شما دو نفر): <strong>تَکتُبانِ</strong></p>
+                        <p>• أنتم (شما - مذکر): <strong>تَکتُبونَ</strong></p>
+                        <p>• أنتن (شما - مؤنث): <strong>تَکتُبنَ</strong></p>
+                        <p>• أنا (من): <strong>أکتُبُ</strong></p>
+                        <p>• نحن (ما): <strong>نَکتُبُ</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>جمله «سَیَذهَبُ الطالبُ إلی الجامعةِ غداً» را ترجمه و تجزیه کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>ترجمه:</strong> دانش‌آموز فردا به دانشگاه خواهد رفت.</p>
+                        <p><strong>تجزیه و ترکیب:</strong></p>
+                        <p>• <strong>سَ:</strong> حرف استقبال (نشانه آینده نزدیک)</p>
+                        <p>• <strong>یَذهَبُ:</strong> فعل مضارع مرفوع (خواهد رفت)</p>
+                        <p>• <strong>الطالِبُ:</strong> فاعل، مرفوع با ضمه</p>
+                        <p>• <strong>إلی:</strong> حرف جر</p>
+                        <p>• <strong>الجامعةِ:</strong> اسم مجرور با کسره</p>
+                        <p>• <strong>غداً:</strong> قید زمان (فردا)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- هدیه نهم -->
+    <div id="g9-religious" class="subject-content">
+        <div class="card">
+            <h2>📖 درس هدیه‌های آسمانی پایه نهم</h2>
+            <p>هدیه‌های آسمانی نهم شامل ۱۶ درس با موضوعات اعتقادی عمیق‌تر و احکام پیشرفته است.</p>
+
+            <h3>سوالات امتحانی با پاسخ تشریحی</h3>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۱</span><span>نماز آیات را توضیح دهید و موارد واجب شدن آن را بنویسید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>نماز آیات:</strong> نمازی است دو رکعتی که در هنگام رخ دادن برخی حوادث طبیعی خاص واجب می‌شود. هر رکعت آن شامل ۵ رکوع است (در مجموع ۱۰ رکوع).</p>
+                        <p><strong>موارد واجب شدن نماز آیات:</strong></p>
+                        <ol>
+                            <li><strong>کسوف (خورشیدگرفتگی):</strong> حتی اگر جزئی باشد</li>
+                            <li><strong>خسوف (ماه‌گرفتگی):</strong> حتی اگر جزئی باشد</li>
+                            <li><strong>زلزله:</strong> هر زلزله‌ای که اتفاق بیفتد</li>
+                            <li><strong>رعد و برق ترسناک:</strong> و صاعقه‌های وحشتناک</li>
+                            <li><strong>بادهای سیاه و سرخ ترسناک:</strong> که باعث ترس بیشتر مردم شود</li>
+                            <li><strong>هر حادثه آسمانی و زمینی:</strong> که باعث ترس عمومی شود</li>
+                        </ol>
+                        <p><strong>نحوه خواندن:</strong></p>
+                        <ul>
+                            <li>هر رکعت شامل ۵ رکوع است</li>
+                            <li>در هر رکعت، ۵ بار حمد و سوره خوانده می‌شود و بعد از هر حمد و سوره یک رکوع می‌رود</li>
+                            <li>در پایان رکعت دوم، دو سجده و تشهد و سلام گفته می‌شود</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question"><span class="question-number">۲</span><span>معاد جسمانی و روحانی را تعریف کنید.</span></div>
+                <button class="answer-toggle" onclick="toggleAnswer(this)"><i class="fas fa-eye"></i> نمایش پاسخ</button>
+                <div class="answer-content">
+                    <div class="answer">
+                        <p><strong>معاد جسمانی:</strong> به معنای زنده شدن انسان در روز قیامت با همین بدن دنیوی (هرچند با ویژگی‌های متفاوت) است. در این دیدگاه، انسان با همین جسم و بدن در قیامت حاضر می‌شود و به اعمال خود پاداش یا کیفر می‌بیند.</p>
+                        <p><strong>معاد روحانی:</strong> به معنای زنده شدن روح انسان در قیامت و پاداش یا کیفر دیدن روح بدون حضور بدن است. در این دیدگاه، فقط روح انسان به عالم آخرت منتقل می‌شود.</p>
+                        <p><strong>دیدگاه اسلام:</strong> بر اساس آیات قرآن و روایات اسلامی، معاد هم جسمانی است و هم روحانی. یعنی انسان در قیامت با جسم و روح خود حاضر می‌شود، هرچند بدن قیامتی ویژگی‌هایی متفاوت با بدن دنیوی دارد.</p>
+                        <p><strong>دلایل معاد جسمانی از قرآن:</strong></p>
+                        <ul>
+                            <li>آیات متعددی به زنده شدن استخوان‌های پوسیده اشاره دارند</li>
+                            <li>اشاره به خوردن میوه‌های بهشتی و نوشیدن از نهرها (که نیازمند جسم است)</li>
+                            <li>تشبیه معاد به زنده شدن زمین مرده پس از باران</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== منابع تکمیلی ============== -->
+<section id="resources" class="section">
+    <div class="card">
+        <h2>📁 منابع تکمیلی و راهنمای مطالعه</h2>
+        <p>در این بخش منابع و راهنماهای تکمیلی برای استفاده بهتر از محتوای سایت ارائه شده است.</p>
+
+        <h3>📚 راهنمای مطالعه مؤثر</h3>
+        <ul>
+            <li><strong>برنامه‌ریزی منظم:</strong> هر روز حداقل ۲ ساعت مطالعه متمرکز داشته باشید</li>
+            <li><strong>تکنیک پومودورو:</strong> ۲۵ دقیقه مطالعه، ۵ دقیقه استراحت (۴ بار)، سپس استراحت طولانی‌تر</li>
+            <li><strong>مرور منظم:</strong> مطالب خوانده شده را ۱ روز، ۱ هفته و ۱ ماه بعد مرور کنید</li>
+            <li><strong>یادداشت‌برداری:</strong> نکات کلیدی را روی کاغذ بنویسید (نه تایپ!)</li>
+            <li><strong>تدریس به دیگران:</strong> آنچه آموختید را برای کسی توضیح دهید (تکنیک فاینمن)</li>
+            <li><strong>حل تمرین:</strong> بعد از خواندن هر درس، حتماً سوالات آن را حل کنید</li>
+            <li><strong>استراحت کافی:</strong> شب قبل از امتحان حداقل ۸ ساعت بخوابید</li>
+        </ul>
+
+        <h3>🎯 نکات کلیدی برای موفقیت در امتحانات</h3>
+        <ul>
+            <li><strong>آمادگی ذهنی:</strong> باور داشته باشید که می‌توانید موفق شوید</li>
+            <li><strong>تغذیه مناسب:</strong> صبحانه کامل بخورید (پروتئین، کربوهیدرات، میوه)</li>
+            <li><strong>مدیریت زمان:</strong> در جلسه امتحان ابتدا سوالات آسان را پاسخ دهید</li>
+            <li><strong>دقت در خواندن سوال:</strong> سوال را حداقل ۲ بار بخوانید</li>
+            <li><strong>پاسخ‌دهی منظم:</strong> پاسخ‌ها را با خط خوانا و منظم بنویسید</li>
+            <li><strong>بازبینی:</strong> در پایان ۵ دقیقه برای بازبینی پاسخ‌ها اختصاص دهید</li>
+        </ul>
+
+        <h3>📖 منابع پیشنهادی برای مطالعه بیشتر</h3>
+        <div class="toc">
+            <div class="toc-card">
+                <div class="toc-card-icon">📘</div>
+                <h3>کتاب‌های درسی</h3>
+                <p>کتاب‌های رسمی وزارت آموزش و پرورش را به دقت مطالعه کنید - منبع اصلی امتحانات</p>
+            </div>
+            <div class="toc-card">
+                <div class="toc-card-icon">📗</div>
+                <h3>کتاب کار</h3>
+                <p>کتاب‌های کار هر درس برای تمرین بیشتر و تسلط بهتر بر مفاهیم</p>
+            </div>
+            <div class="toc-card">
+                <div class="toc-card-icon">📕</div>
+                <h3>نمونه سوالات</h3>
+                <p>مجموعه سوالات امتحانی سال‌های گذشته برای آمادگی بهتر</p>
+            </div>
+            <div class="toc-card">
+                <div class="toc-card-icon">📙</div>
+                <h3>کتاب‌های کمک‌درسی</h3>
+                <p>کتاب‌های کمک‌آموزشی معتبر برای تعمیق یادگیری</p>
+            </div>
+        </div>
+
+        <h3>⏰ توصیه‌های زمانی برای مطالعه</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>زمان</th><th>فعالیت</th><th>توضیحات</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>۶-۸ صبح</td><td>مطالعه دروس سخت</td><td>ذهن در بهترین حالت یادگیری است</td></tr>
+                    <tr><td>۴-۶ عصر</td><td>حل تمرین</td><td>زمان مناسب برای تمرین و تمرکز</td></tr>
+                    <tr><td>۸-۱۰ شب</td><td>مرور مطالب</td><td>مرور قبل از خواب برای تثبیت در حافظه</td></tr>
+                    <tr><td>آخر هفته</td><td>مطالعه عمیق</td><td>۴-۶ ساعت مطالعه متمرکز</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>💡 نکته طلایی:</strong> بهترین زمان مطالعه، زمانی است که شما در آن بیشترین تمرکز را دارید. این زمان برای هر فرد متفاوت است. خودتان را بشناسید و بر اساس آن برنامه‌ریزی کنید.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============== درباره ============== -->
+<section id="about" class="section">
+    <div class="card">
+        <h2>ℹ️ درباره کتابچه جامع آموزشی</h2>
+        <p>این کتابچه دیجیتال با هدف فراهم آوردن منبع آموزشی جامع، رایگان و در دسترس برای تمام دانش‌آموزان دوره اول متوسطه (پایه‌های هفتم، هشتم و نهم) طراحی و تهیه شده است. ما بر این باوریم که آموزش حق همگانی است و هیچ دانش‌آموزی نباید به دلیل محدودیت‌های جغرافیایی، اقتصادی یا اجتماعی از دسترسی به منابع آموزشی باکیفیت محروم بماند.</p>
+
+        <h3>🎯 اهداف ما</h3>
+        <ul>
+            <li>فراهم کردن دسترسی رایگان به محتوای آموزشی با کیفیت</li>
+            <li>کمک به دانش‌آموزان در آمادگی برای امتحانات</li>
+            <li>ترویج فرهنگ یادگیری خودآموز و مستقل</li>
+            <li>ایجاد منبع مرجع برای والدین و معلمان</li>
+            <li>کاهش هزینه‌های آموزش برای خانواده‌ها</li>
+        </ul>
+
+        <h3>👥 تیم تهیه‌کننده</h3>
+        <p>این کتابچه توسط گروهی از معلمان مجرب و متخصصان آموزش و پرورش با سابقه تدریس بیش از ۲۰ سال در مدارس کشور تهیه شده است. تمام محتوای ارائه شده بر اساس آخرین نسخه کتاب‌های درسی رسمی و با نظارت کارشناسان آموزشی تدوین شده است.</p>
+
+        <h3>📞 راه‌های ارتباطی</h3>
+        <p>اگر پیشنهاد، انتقاد یا سؤالی دارید، می‌توانید از طریق راه‌های زیر با ما در ارتباط باشید:</p>
+        <ul>
+            <li><strong>ایمیل:</strong> education@example.com</li>
+            <li><strong>شبکه‌های اجتماعی:</strong> @schoolhandbook</li>
+            <li><strong>تلفن:</strong> 021-12345678</li>
+        </ul>
+
+        <h3>📜 حقوق استفاده</h3>
+        <p>تمام محتوای این سایت برای استفاده شخصی و آموزشی دانش‌آموزان، معلمان و والدین کاملاً رایگان است. استفاده تجاری از این محتوا بدون اجازه کتبی ممنوع است. بازنشر محتوا با ذکر منبع مجاز می‌باشد.</p>
+
+        <h3>🙏 سپاسگزاری</h3>
+        <p>از تمام معلمان، متخصصان آموزشی و دانش‌آموزانی که در تهیه و بهبود این کتابچه مشارکت داشته‌اند، صمیمانه سپاسگزاریم. امیدواریم این اثر گامی کوچک در مسیر اعتلای سطح علمی دانش‌آموزان این سرزمین باشد.</p>
+
+        <div class="highlight-box">
+            <p><strong>📌 پیام پایانی:</strong> «یادگیری یک سفر است، نه یک مقصد. هر روز یک قدم به جلو، هزاران قدم در سال. با هم می‌توانیم قله‌های دانش را فتح کنیم.»</p>
+        </div>
+
+        <div class="info-box">
+            <p><strong>ℹ️ به‌روزرسانی‌ها:</strong> محتوای این سایت به صورت مرتب با آخرین تغییرات کتاب‌های درسی به‌روز می‌شود. آخرین به‌روزرسانی: شهریور ۱۴۰۵</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h3>📚 کتابچه جامع آموزشی و مقررات مدرسه</h3>
+    <p>مرجع کامل آموزشی برای دانش‌آموزان دوره اول متوسطه</p>
+    <div class="footer-links">
+        <a href="#" onclick="goToSection('home'); return false;">خانه</a>
+        <a href="#" onclick="goToSection('rules'); return false;">قوانین</a>
+        <a href="#" onclick="goToSection('grade7'); return false;">پایه هفتم</a>
+        <a href="#" onclick="goToSection('grade8'); return false;">پایه هشتم</a>
+        <a href="#" onclick="goToSection('grade9'); return false;">پایه نهم</a>
+        <a href="#" onclick="goToSection('about'); return false;">درباره</a>
+    </div>
+    <p>© ۱۴۰۵ - تمامی حقوق محفوظ است</p>
+    <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">طراحی شده با ❤️ برای دانش‌آموزان ایران</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ========================================
+// State Management
+// ========================================
+const state = {
+    currentSection: 'home',
+    currentSubject: {
+        grade7: 'g7-persian',
+        grade8: 'g8-persian',
+        grade9: 'g9-persian'
+    },
+    theme: localStorage.getItem('theme') || 'light',
+    searchQuery: ''
+};
+
+// ========================================
+// Theme Management
+// ========================================
+function initTheme() {
+    document.documentElement.setAttribute('data-theme', state.theme);
+    updateThemeIcon();
+}
+
+function toggleTheme() {
+    state.theme = state.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', state.theme);
+    localStorage.setItem('theme', state.theme);
+    updateThemeIcon();
+    showToast(state.theme === 'dark' ? '🌙 حالت شب فعال شد' : '☀️ حالت روز فعال شد');
+}
+
+function updateThemeIcon() {
+    const icon = document.querySelector('#themeToggle i');
+    if (icon) {
+        icon.className = state.theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+}
+
+// ========================================
+// Navigation
+// ========================================
+function goToSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    
+    // Show target section
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        targetSection.classList.add('active');
+        state.currentSection = sectionId;
+        
+        // Update nav buttons
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.target === sectionId);
+        });
+        
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Save state
+        localStorage.setItem('lastSection', sectionId);
+    }
+}
+
+// Navigation button clicks
+document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        if (target) goToSection(target);
+    });
+});
+
+// ========================================
+// Subject Tabs
+// ========================================
+function initSubjectTabs() {
+    document.querySelectorAll('.subject-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const subjectId = btn.dataset.subject;
+            const parentCard = btn.closest('.card');
+            const parentSection = btn.closest('.section');
+            
+            if (!parentCard || !parentSection) return;
+            
+            // Update active button in same group
+            const buttonsInGroup = parentCard.querySelectorAll('.subject-btn');
+            buttonsInGroup.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // Hide all subject contents in this section
+            parentSection.querySelectorAll('.subject-content').forEach(sc => {
+                sc.classList.remove('active');
+            });
+            
+            // Show target subject
+            const targetContent = document.getElementById(subjectId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
+
+// ========================================
+// Answer Toggles
+// ========================================
+function toggleAnswer(button) {
+    const content = button.nextElementSibling;
+    if (content) {
+        content.classList.toggle('visible');
+        const icon = button.querySelector('i');
+        if (content.classList.contains('visible')) {
+            button.innerHTML = '<i class="fas fa-eye-slash"></i> مخفی کردن پاسخ';
+        } else {
+            button.innerHTML = '<i class="fas fa-eye"></i> نمایش پاسخ';
+        }
+    }
+}
+
+// Make toggleAnswer globally accessible
+window.toggleAnswer = toggleAnswer;
+window.goToSection = goToSection;
+
+// ========================================
+// Search Functionality
+// ========================================
+let searchTimeout;
+
+document.getElementById('searchInput').addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        performSearch(e.target.value.trim());
+    }, 300);
+});
+
+function performSearch(query) {
+    const countElement = document.getElementById('searchCount');
+    
+    // Clear previous highlights
+    document.querySelectorAll('mark.search-highlight').forEach(mark => {
+        const parent = mark.parentNode;
+        parent.replaceChild(document.createTextNode(mark.textContent), mark);
+        parent.normalize();
+    });
+    
+    if (!query || query.length < 2) {
+        countElement.classList.remove('active');
+        return;
+    }
+    
+    let matchCount = 0;
+    const sections = document.querySelectorAll('.section');
+    
+    sections.forEach(section => {
+        const textNodes = getTextNodes(section);
+        
+        textNodes.forEach(node => {
+            const text = node.nodeValue;
+            if (text && text.toLowerCase().includes(query.toLowerCase())) {
+                const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+                const parts = text.split(regex);
+                
+                if (parts.length > 1) {
+                    const fragment = document.createDocumentFragment();
+                    parts.forEach(part => {
+                        if (part.toLowerCase() === query.toLowerCase()) {
+                            const mark = document.createElement('mark');
+                            mark.className = 'search-highlight';
+                            mark.textContent = part;
+                            fragment.appendChild(mark);
+                            matchCount++;
+                        } else {
+                            fragment.appendChild(document.createTextNode(part));
+                        }
+                    });
+                    node.parentNode.replaceChild(fragment, node);
+                }
+            }
+        });
+    });
+    
+    countElement.textContent = matchCount;
+    countElement.classList.add('active');
+    
+    if (matchCount > 0) {
+        const firstMatch = document.querySelector('mark.search-highlight');
+        if (firstMatch) {
+            firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+}
+
+function getTextNodes(element) {
+    const textNodes = [];
+    const walker = document.createTreeWalker(
+        element,
+        NodeFilter.SHOW_TEXT,
+        {
+            acceptNode: (node) => {
+                const parent = node.parentElement;
+                if (!parent) return NodeFilter.FILTER_REJECT;
+                const tag = parent.tagName.toLowerCase();
+                if (['script', 'style', 'button', 'input'].includes(tag)) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                if (parent.classList.contains('search-results-count')) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }
+    );
+    
+    let node;
+    while (node = walker.nextNode()) {
+        textNodes.push(node);
+    }
+    return textNodes;
+}
+
+function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// ========================================
+// Back to Top Button
+// ========================================
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ========================================
+// Toast Notifications
+// ========================================
+function showToast(message, duration = 3000) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, duration);
+}
+
+// ========================================
+// Offline Detection
+// ========================================
+window.addEventListener('online', () => {
+    document.getElementById('offlineBanner').classList.remove('show');
+    showToast('✅ به اینترنت متصل شدید');
+});
+
+window.addEventListener('offline', () => {
+    document.getElementById('offlineBanner').classList.add('show');
+    showToast('⚠️ اتصال اینترنت قطع شد');
+});
+
+// ========================================
+// Keyboard Shortcuts
+// ========================================
+document.addEventListener('keydown', (e) => {
+    // Ctrl/Cmd + K for search
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+    }
+    
+    // Escape to clear search
+    if (e.key === 'Escape') {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput === document.activeElement) {
+            searchInput.value = '';
+            searchInput.dispatchEvent(new Event('input'));
+            searchInput.blur();
+        }
+    }
+});
+
+// ========================================
+// Theme Toggle
+// ========================================
+document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+
+// ========================================
+// Service Worker for Offline Support
+// ========================================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // For GitHub Pages, create a sw.js file with caching logic
+        // Here we just register if it exists
+        if (window.location.hostname.includes('github.io')) {
+            navigator.serviceWorker.register('/sw.js').catch(() => {
+                console.log('Service Worker registration skipped');
+            });
+        }
+    });
+}
+
+// ========================================
+// LocalStorage Backup
+// ========================================
+function saveLastState() {
+    try {
+        localStorage.setItem('lastVisit', new Date().toISOString());
+        localStorage.setItem('lastSection', state.currentSection);
+    } catch (e) {
+        console.warn('LocalStorage not available');
+    }
+}
+
+function restoreLastState() {
+    try {
+        const lastSection = localStorage.getItem('lastSection');
+        if (lastSection && document.getElementById(lastSection)) {
+            goToSection(lastSection);
+        }
+    } catch (e) {
+        console.warn('Could not restore state');
+    }
+}
+
+// ========================================
+// Print Optimization
+// ========================================
+window.addEventListener('beforeprint', () => {
+    // Expand all answers for printing
+    document.querySelectorAll('.answer-content').forEach(ac => {
+        ac.classList.add('visible');
+    });
+});
+
+// ========================================
+// Performance Optimizations
+// ========================================
+// Lazy load images
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+});
+
+// ========================================
+// Analytics (Optional)
+// ========================================
+function trackEvent(category, action, label) {
+    // Placeholder for analytics
+    console.log(`[Analytics] ${category}: ${action} - ${label}`);
+}
+
+// Track section visits
+document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        trackEvent('Navigation', 'Section Visit', btn.dataset.target);
+    });
+});
+
+// ========================================
+// Initialization
+// ========================================
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    initSubjectTabs();
+    
+    // Check online status
+    if (!navigator.onLine) {
+        document.getElementById('offlineBanner').classList.add('show');
+    }
+    
+    // Restore last state after a short delay
+    setTimeout(restoreLastState, 100);
+    
+    // Save state periodically
+    setInterval(saveLastState, 30000);
+    
+    console.log('📚 کتابچه جامع آموزشی با موفقیت بارگذاری شد');
+});
+
+// Save state before leaving
+window.addEventListener('beforeunload', saveLastState);
+
+// Expose functions globally for inline event handlers
+window.toggleAnswer = toggleAnswer;
+window.goToSection = goToSection;
+</script>
+
+</body>
+</html>   
